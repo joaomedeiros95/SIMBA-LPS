@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and abstract="true" mandatory="true" name="SIMBA">
+				<and mandatory="true" name="Conexão">
+					<or mandatory="true" name="Interna">
+						<feature mandatory="true" name="Cabo"/>
+						<feature mandatory="true" name="Wi-Fi"/>
+					</or>
+					<alt name="Externa">
+						<feature mandatory="true" name="3G"/>
+						<feature mandatory="true" name="4G"/>
+					</alt>
+				</and>
+				<feature mandatory="true" name="Redundância Elétrica"/>
+				<or name="Sensores">
+					<feature mandatory="true" name="Movimento"/>
+					<feature mandatory="true" name="Calor"/>
+					<feature mandatory="true" name="Impacto"/>
+					<feature mandatory="true" name="Som"/>
+				</or>
+				<alt mandatory="true" name="Monitoramento Câmeras">
+					<feature mandatory="true" name="Câmera única"/>
+					<feature mandatory="true" name="Multicâmera"/>
+				</alt>
+				<and mandatory="true" name="Acionador de Dispositivos">
+					<or mandatory="true" name="Central de Alarme">
+						<feature mandatory="true" name="Sirenes"/>
+						<feature mandatory="true" name="Luzes"/>
+					</or>
+					<or name="Central de Dispositivos">
+						<feature mandatory="true" name="Fumaça"/>
+						<feature mandatory="true" name="Bollards"/>
+						<feature mandatory="true" name="Autoridades"/>
+					</or>
+				</and>
+				<alt mandatory="true" name="Notificador">
+					<feature mandatory="true" name="SMS"/>
+					<feature mandatory="true" name="E-mail"/>
+				</alt>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>

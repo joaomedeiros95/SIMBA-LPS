@@ -1,10 +1,13 @@
 package br.ufrn.simba.seguranca;
 
+import br.ufrn.simba.model.TipoDispositivo;
+import org.apache.commons.mail.EmailException;
+
 /**
  * Created by joao on 04/04/17.
  */
 public interface Alerta {
 
-    void acionarAlerta();
+    void acionarAlerta(TipoDispositivo tipoDispositivo) throws EmailException;
 
 }

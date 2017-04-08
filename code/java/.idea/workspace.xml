@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="adc90d76-831c-430a-9119-5458afa80e97" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" />
+    <list default="true" id="adc90d76-831c-430a-9119-5458afa80e97" name="Default" comment="- Adiciona monitoramente de sensores e monitoramento de câmeras">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/model/TipoDispositivo.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hello-world.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/SensorImagem.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/Camera.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/DetectorMovimento.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SIMBA.iml" afterPath="$PROJECT_DIR$/SIMBA.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/Controlador.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/Controlador.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/comunicacao/HTTPRequester.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/comunicacao/HTTPRequester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/Camera.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/Camera.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/Dispositivo.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/Dispositivo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/SensorImagem.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/SensorImagem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Calor.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Calor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Impacto.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Impacto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Movimento.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Movimento.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Sensor.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Sensor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Som.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Som.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Bollands.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Bollands.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Fumaca.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Fumaca.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Luzes.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Luzes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Sirene.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Sirene.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/model/AtividadeSensor.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/model/AtividadeSensor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/monitoramento/Monitoramento.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/monitoramento/Monitoramento.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/Alerta.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/Alerta.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/MedidasSeguranca.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/MedidasSeguranca.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/Notificacao.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/Notificacao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/NotificacaoEmail.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/NotificacaoEmail.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/NotificacaoSMS.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/NotificacaoSMS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/simba.properties" afterPath="$PROJECT_DIR$/src/main/resources/simba.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,8 +52,8 @@
       <file leaf-file-name="Controlador.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/Controlador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+            <state relative-caret-position="90">
+              <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,35 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Camera.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/Camera.java">
+      <file leaf-file-name="NotificacaoEmail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/NotificacaoEmail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AtividadeSensor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/model/AtividadeSensor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dispositivo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/Dispositivo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="-45">
+              <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,49 +73,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HTTPRequester.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/comunicacao/HTTPRequester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="37" column="49" lean-forward="false" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sensor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Sensor.java">
+      <file leaf-file-name="Notificacao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/Notificacao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+              <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Monitoramento.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/monitoramento/Monitoramento.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="24" column="103" lean-forward="false" selection-start-line="24" selection-start-column="103" selection-end-line="24" selection-end-column="103" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#717#734#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -147,6 +92,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -166,17 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/br/ufrn/simba/model/AtividadeSensor.java" />
-        <option value="$PROJECT_DIR$/src/br/ufrn/simba/monitoramento/Dispositivos.java" />
-        <option value="$PROJECT_DIR$/src/br/ufrn/simba/monitoramento/Dispositivo.java" />
-        <option value="$PROJECT_DIR$/src/br/ufrn/simba/monitoramento/SensorImagem.java" />
-        <option value="$PROJECT_DIR$/src/br/ufrn/simba/monitoramento/Sensores.java" />
-        <option value="$PROJECT_DIR$/src/br/ufrn/simba/monitoramento/Sensor.java" />
-        <option value="$PROJECT_DIR$/src/br/ufrn/simba/monitoramento/Impacto.java" />
-        <option value="$PROJECT_DIR$/src/br/ufrn/simba/monitoramento/Calor.java" />
-        <option value="$PROJECT_DIR$/src/br/ufrn/simba/monitoramento/Movimento.java" />
-        <option value="$PROJECT_DIR$/src/br/ufrn/simba/monitoramento/Som.java" />
-        <option value="$PROJECT_DIR$/src/br/ufrn/simba/seguranca/Alerta.java" />
         <option value="$PROJECT_DIR$/src/br/ufrn/simba/seguranca/Notificao.java" />
         <option value="$PROJECT_DIR$/src/br/ufrn/simba/seguranca/Notificacao.java" />
         <option value="$PROJECT_DIR$/src/br/ufrn/simba/seguranca/NotificacaoEmail.java" />
@@ -205,18 +140,29 @@
         <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/HTTPRequester.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/utils/Propriedades.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Movimento.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/monitoramento/Monitoramento.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Calor.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Impacto.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Som.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/simba.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/model/AtividadeSensor.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/Dispositivo.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Sensor.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/comunicacao/HTTPRequester.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/Camera.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/model/AtividadeSensor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/monitoramento/Monitoramento.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/DetectorMovimento.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/model/TipoDispositivo.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/simba.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/Notificacao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/Alerta.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/NotificacaoSMS.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/Controlador.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/MedidasSeguranca.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Luzes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Sirene.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Fumaca.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Bollands.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/NotificacaoEmail.java" />
       </list>
     </option>
   </component>
@@ -254,6 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -276,74 +223,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
+              <option name="myItemId" value="Maven: org.apache.commons:commons-email:1.4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SIMBA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SIMBA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="misc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SIMBA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rt.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -444,37 +325,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="monitoramento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SIMBA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simba" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="seguranca" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -538,45 +389,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sensor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SIMBA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simba" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="comunicacao" />
+              <option name="myItemId" value="seguranca" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1023,7 +843,9 @@
       <workItem from="1491439929708" duration="21000" />
       <workItem from="1491439986261" duration="38000" />
       <workItem from="1491669142549" duration="618000" />
-      <workItem from="1491669790363" duration="5364000" />
+      <workItem from="1491669790363" duration="8783000" />
+      <workItem from="1491678615898" duration="952000" />
+      <workItem from="1491679628246" duration="120000" />
     </task>
     <task id="LOCAL-00001" summary="Adiciona suporte ao Maven e abstração para HTTP Request">
       <created>1491671110892</created>
@@ -1032,11 +854,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491671110892</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Adiciona monitoramente de sensores e monitoramento de câmeras">
+      <created>1491675184719</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1491675184719</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10106000" />
+    <option name="totallyTimeSpent" value="14597000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1054,7 +883,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32885906" sideWeight="0.506079" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1065,16 +894,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39932886" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.4969605" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32885906" sideWeight="0.49392098" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27887538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2887538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1082,6 +910,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1092,7 +921,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adiciona suporte ao Maven e abstração para HTTP Request" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adiciona suporte ao Maven e abstração para HTTP Request" />
+    <MESSAGE value="- Adiciona monitoramente de sensores e monitoramento de câmeras" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Adiciona monitoramente de sensores e monitoramento de câmeras" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1113,41 +943,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Som.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/Dispositivo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/SensorImagem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#243#244#0" expanded="false" />
-            <element signature="e#270#271#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/SensorImagem.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Luzes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1180,10 +983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1191,9 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1201,15 +997,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/Camera.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/DetectorMovimento.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1217,21 +1014,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/SensorImagem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#243#244#0" expanded="false" />
-            <element signature="e#270#271#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/SensorImagem.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Luzes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1264,10 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1275,9 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1285,15 +1064,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/Camera.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/DetectorMovimento.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1301,43 +1081,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/SensorImagem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#243#244#0" expanded="false" />
-            <element signature="e#270#271#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/SensorImagem.java" />
     <entry file="file://$PROJECT_DIR$/src/br/ufrn/simba.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/MedidasSeguranca.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/Alerta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Bollands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/DispositivoSeguranca.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1345,67 +1093,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Fumaca.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Luzes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Sirene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/SensorImagem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding>
-            <element signature="e#243#244#0" expanded="false" />
-            <element signature="e#270#271#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/NotificacaoEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/NotificacaoSMS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/Notificacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-jdk/jre/lib/rt.jar!/sun/misc/IOUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1413,11 +1104,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
           <caret line="28" column="15" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1425,10 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding>
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1436,10 +1118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#143#144#0" expanded="true" />
-            <element signature="e#170#171#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1447,10 +1125,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1458,28 +1132,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="20" />
-          <folding>
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/monitoramento/Monitoramento.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/SensorImagem.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/model/TipoDispositivo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="24" column="103" lean-forward="false" selection-start-line="24" selection-start-column="103" selection-end-line="24" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#717#734#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Sensor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/model/AtividadeSensor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        <state relative-caret-position="15">
+          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/DetectorMovimento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="26" column="65" lean-forward="false" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1491,24 +1165,8 @@
         <state relative-caret-position="55">
           <caret line="37" column="49" lean-forward="false" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/model/AtividadeSensor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/simba.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1516,36 +1174,135 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/sensor/Sensor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-email/1.4/commons-email-1.4.jar!/org/apache/commons/mail/Email.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="348" column="17" lean-forward="false" selection-start-line="348" selection-start-column="17" selection-end-line="348" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/Alerta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/NotificacaoSMS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/Notificacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/monitoramento/Monitoramento.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="284">
+          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Luzes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Fumaca.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Sirene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/simba.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/Camera.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/MedidasSeguranca.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        <state relative-caret-position="150">
+          <caret line="10" column="86" lean-forward="false" selection-start-line="10" selection-start-column="86" selection-end-line="10" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/dispositivo/seguranca/Bollands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/seguranca/NotificacaoEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/ufrn/simba/Controlador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        <state relative-caret-position="90">
+          <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

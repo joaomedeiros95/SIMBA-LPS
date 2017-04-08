@@ -1,12 +1,13 @@
 package br.ufrn.simba;
 
-import br.ufrn.simba.dispositivo.Camera;
+import br.ufrn.simba.dispositivo.DetectorMovimento;
 import br.ufrn.simba.model.AtividadeSensor;
+import br.ufrn.simba.model.TipoDispositivo;
 import br.ufrn.simba.monitoramento.Monitoramento;
-import com.github.sarxos.webcam.Webcam;
+import br.ufrn.simba.seguranca.NotificacaoEmail;
+import br.ufrn.simba.utils.Propriedades;
+import org.apache.commons.mail.EmailException;
 
-import javax.imageio.ImageIO;
-import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
@@ -15,11 +16,14 @@ import java.util.List;
  */
 public class Controlador {
 
+    private static final int INTERVALO_SENSOR =
+            Integer.parseInt(Propriedades.pegarPropriedade("intervalo_sensor"));
+
     public static void monitorar() {
         try {
             final List<AtividadeSensor> sensores = Monitoramento.analisarDispositivos();
             for (AtividadeSensor sensor : sensores) {
-                System.out.println("Tipo Dispositivo: " + sensor.getTipoDispositivo());
+                System.out.println("Tipo Dispositivo: " + sensor.getTipoDispositivo().getNome());
                 System.out.println("Status Code: " + sensor.getValor().getStatusCode());
                 System.out.println(sensor.getValor().getResposta());
             }
@@ -30,10 +34,26 @@ public class Controlador {
         }
     }
 
+    public static void acionarMedidaSeguranca(TipoDispositivo tipoDispositivo) {
+        try {
+            new NotificacaoEmail().acionarAlerta(tipoDispositivo);
+        } catch (EmailException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] args) throws IOException {
-//        monitorar();
-        new Camera();
-        System.in.read();
+        // Acionar detector de movimento
+        new DetectorMovimento();
+
+        while (true) {
+            monitorar();
+            try {
+                Thread.sleep(INTERVALO_SENSOR);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 }

@@ -20,6 +20,12 @@
             <artifactId>webcam-capture</artifactId>
             <version>0.3.10</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-email</artifactId>
+            <version>1.4</version>
+        </dependency>
     </dependencies>
 
 </project>

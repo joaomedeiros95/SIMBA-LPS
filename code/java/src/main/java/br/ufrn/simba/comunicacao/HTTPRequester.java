@@ -1,20 +1,32 @@
 package br.ufrn.simba.comunicacao;
 
+import br.ufrn.simba.utils.Propriedades;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
-import sun.misc.IOUtils;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 /**
  * Created by joao on 08/04/17.
  */
 public class HTTPRequester {
 
-    private static final String ARDUINO_IP = System.getenv().get("ARDUINO_IP");
+    private static final String ARDUINO_IP = Propriedades.pegarPropriedade("arduino_ip");
     private static final String ARUINO_PATH = "arduino";
+    private static HTTPRequester instance;
+
+    public static HTTPRequester getInstance() {
+        if (instance == null) {
+            instance = new HTTPRequester();
+        }
+
+        return instance;
+    }
 
     public RespostaHTTP get(final boolean analogico, final int porta) throws IOException {
         return this.get(analogico, porta, -1);
@@ -23,7 +35,7 @@ public class HTTPRequester {
     public RespostaHTTP get(final boolean analogico, final int porta, final int value)
             throws IOException {
         final CloseableHttpClient clienteHTTP = HttpClients.createDefault();
-        final HttpGet httpGet = new HttpGet(montarURL(analogico, porta, value));
+        final HttpGet httpGet = new HttpGet(this.montarURL(analogico, porta, value));
         final CloseableHttpResponse resposta = clienteHTTP.execute(httpGet);
 
         try {

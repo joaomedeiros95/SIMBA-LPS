@@ -1,13 +1,22 @@
 package br.ufrn.simba.model;
 
+import br.ufrn.simba.comunicacao.HTTPRequester;
+
 /**
  * Created by joao on 04/04/17.
  */
 public class AtividadeSensor {
 
+    public static final int SENSOR_MOVIMENTO = 1;
+
     private int tipoDispositivo;
 
-    private Object valor;
+    private HTTPRequester.RespostaHTTP valor;
+
+    public AtividadeSensor(int tipoDispositivo, HTTPRequester.RespostaHTTP valor) {
+        this.tipoDispositivo = tipoDispositivo;
+        this.valor = valor;
+    }
 
     public int getTipoDispositivo() {
         return tipoDispositivo;
@@ -17,11 +26,11 @@ public class AtividadeSensor {
         this.tipoDispositivo = tipoDispositivo;
     }
 
-    public Object getValor() {
+    public HTTPRequester.RespostaHTTP getValor() {
         return valor;
     }
 
-    public void setValor(Object valor) {
+    public void setValor(HTTPRequester.RespostaHTTP valor) {
         this.valor = valor;
     }
 }

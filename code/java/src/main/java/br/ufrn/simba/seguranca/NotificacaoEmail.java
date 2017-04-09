@@ -5,6 +5,8 @@ import br.ufrn.simba.utils.Propriedades;
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.MultiPartEmail;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Created by joao on 04/04/17.
@@ -14,9 +16,14 @@ public class NotificacaoEmail extends Notificacao {
     private static final String[] EMAILS =
             Propriedades.pegarPropriedade("emails_notificacao").split(",");
     private static final String ASSUNTO = Propriedades.pegarPropriedade("email_assunto");
+    public static final String NOME = "email";
+    private static final Logger LOGGER = LogManager.getLogger(NotificacaoEmail.class);
 
     public void acionarAlerta(TipoDispositivo tipoDispositivo) throws EmailException {
-        System.out.println("Enviando email");
+        if (LOGGER.isDebugEnabled()) {
+            LOGGER.debug("Enviando email");
+        }
+
         this.tipoDispotivo = tipoDispositivo.getNome();
 
         MultiPartEmail email = new MultiPartEmail();
@@ -34,7 +41,9 @@ public class NotificacaoEmail extends Notificacao {
         email.addTo(EMAILS);
 
         email.send();
-        System.out.println("Email enviado");
+        if (LOGGER.isDebugEnabled()) {
+            LOGGER.debug("Email enviado");
+        }
     }
 
     private String montarEmail() {

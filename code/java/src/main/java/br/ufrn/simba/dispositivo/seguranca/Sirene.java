@@ -1,13 +1,13 @@
 package br.ufrn.simba.dispositivo.seguranca;
 
-import br.ufrn.simba.model.TipoDispositivo;
-import org.apache.commons.mail.EmailException;
-
 /**
  * Created by joao on 04/04/17.
  */
-public class Sirene implements DispositivoSeguranca {
-    public void acionarAlerta(TipoDispositivo tipoDispositivo) throws EmailException {
+public class Sirene extends DispositivoSeguranca {
 
+    public static final String NOME = "sirene";
+
+    String pegarNome() {
+        return NOME;
     }
 }

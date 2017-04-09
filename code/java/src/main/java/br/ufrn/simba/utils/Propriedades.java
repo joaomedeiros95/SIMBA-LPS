@@ -1,8 +1,10 @@
 package br.ufrn.simba.utils;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.Properties;
 
 /**
@@ -13,6 +15,8 @@ public class Propriedades {
     private static final String ARQUIVO_PROPRIEDADES = "simba.properties";
     private static final Properties prop = new Properties();
 
+    private static final Logger LOGGER = LogManager.getLogger(Propriedades.class);
+
     static {
         final InputStream input =
                 Propriedades.class.getClassLoader().getResourceAsStream(ARQUIVO_PROPRIEDADES);
@@ -20,8 +24,9 @@ public class Propriedades {
         try {
             prop.load(input);
         } catch (IOException e) {
-            // TODO: refatorar isso em Log4J
-            System.out.println("Um erro ocorreu ao carregar as propriedades do sistema!");
+            if (LOGGER.isErrorEnabled()) {
+                LOGGER.error("Um erro ocorreu ao carregar as propriedades do sistema!");
+            }
         }
     }
 

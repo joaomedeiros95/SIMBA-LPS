@@ -1,12 +1,11 @@
 package br.ufrn.simba;
 
-import br.ufrn.simba.dispositivo.DetectorMovimento;
+import br.ufrn.simba.dispositivo.CameraMovimento;
 import br.ufrn.simba.model.AtividadeSensor;
 import br.ufrn.simba.model.TipoDispositivo;
 import br.ufrn.simba.monitoramento.Bateria;
 import br.ufrn.simba.monitoramento.Monitoramento;
 import br.ufrn.simba.seguranca.MedidasSeguranca;
-import br.ufrn.simba.seguranca.NotificacaoEmail;
 import br.ufrn.simba.utils.Propriedades;
 import org.apache.commons.mail.EmailException;
 import org.apache.logging.log4j.LogManager;
@@ -27,7 +26,7 @@ public class Controlador {
             Integer.parseInt(Propriedades.pegarPropriedade("intervalo_sensor"));
 
     private static final Logger LOGGER = LogManager.getLogger(Controlador.class);
-    private static DetectorMovimento detectorMovimento;
+    private static CameraMovimento detectorMovimento;
 
     private static class ControladorThread implements Callable<Integer> {
 
@@ -79,7 +78,7 @@ public class Controlador {
 
     public static void main(String[] args) throws IOException {
         // Acionar detector de movimento
-        detectorMovimento = new DetectorMovimento();
+        detectorMovimento = new CameraMovimento();
         final ExecutorService threadpool =
                 Executors.newFixedThreadPool(Integer.parseInt(Propriedades.pegarPropriedade("num_threads")));
         while (true) {

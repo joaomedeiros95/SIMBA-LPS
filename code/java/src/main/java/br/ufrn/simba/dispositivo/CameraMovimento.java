@@ -13,12 +13,12 @@ import org.apache.logging.log4j.Logger;
 /**
  * Created by joao on 04/04/17.
  */
-public class DetectorMovimento implements WebcamMotionListener {
+public class CameraMovimento implements WebcamMotionListener {
 
     private int intervaloCamera = Integer.parseInt(Propriedades.pegarPropriedade("intervalo_camera"));
-    private static final Logger LOGGER = LogManager.getLogger(DetectorMovimento.class);
+    private static final Logger LOGGER = LogManager.getLogger(CameraMovimento.class);
 
-    public DetectorMovimento() {
+    public CameraMovimento() {
         WebcamMotionDetector detector = new WebcamMotionDetector(Webcam.getDefault());
         detector.setInterval(intervaloCamera); // one check per 500 ms
         detector.addMotionListener(this);

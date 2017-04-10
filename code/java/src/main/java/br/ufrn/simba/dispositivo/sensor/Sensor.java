@@ -32,7 +32,7 @@ public abstract class Sensor implements Dispositivo {
 
     abstract String pegarNome();
 
-    public boolean analogico() {
+    private boolean analogico() {
         final String s = pegarTipo();
 
         return s.equals(ANALOGICO);

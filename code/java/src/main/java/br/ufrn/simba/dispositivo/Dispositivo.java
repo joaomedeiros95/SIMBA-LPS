@@ -1,7 +1,5 @@
 package br.ufrn.simba.dispositivo;
 
-import br.ufrn.simba.comunicacao.HTTPRequester;
-
 import java.io.IOException;
 
 /**
@@ -9,6 +7,6 @@ import java.io.IOException;
  */
 public interface Dispositivo {
 
-    HTTPRequester.RespostaHTTP receberDados() throws IOException;
+    boolean receberDados() throws IOException;
 
 }

@@ -1,34 +1,21 @@
 package br.ufrn.simba.model;
 
-import br.ufrn.simba.comunicacao.HTTPRequester;
-
 /**
  * Created by joao on 04/04/17.
  */
 public class AtividadeSensor {
 
-    private TipoDispositivo tipoDispositivo;
+    private boolean ofereceRisco;
 
-    private HTTPRequester.RespostaHTTP valor;
-
-    public AtividadeSensor(TipoDispositivo tipoDispositivo, HTTPRequester.RespostaHTTP valor) {
-        this.tipoDispositivo = tipoDispositivo;
-        this.valor = valor;
+    public AtividadeSensor(boolean ofereceRisco) {
+        this.ofereceRisco = ofereceRisco;
     }
 
-    public TipoDispositivo getTipoDispositivo() {
-        return tipoDispositivo;
+    public boolean isOfereceRisco() {
+        return ofereceRisco;
     }
 
-    public void setTipoDispositivo(TipoDispositivo tipoDispositivo) {
-        this.tipoDispositivo = tipoDispositivo;
-    }
-
-    public HTTPRequester.RespostaHTTP getValor() {
-        return valor;
-    }
-
-    public void setValor(HTTPRequester.RespostaHTTP valor) {
-        this.valor = valor;
+    public void setOfereceRisco(boolean ofereceRisco) {
+        this.ofereceRisco = ofereceRisco;
     }
 }

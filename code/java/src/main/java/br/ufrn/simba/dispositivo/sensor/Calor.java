@@ -5,7 +5,11 @@ package br.ufrn.simba.dispositivo.sensor;
  */
 public class Calor extends Sensor {
 
-    String pegarNome() {
-        return null;
+    public Calor(int porta, boolean analogico) {
+        super(porta, analogico);
+    }
+
+    boolean checarValor(Integer valor) {
+        return false;
     }
 }

@@ -26,9 +26,10 @@ public class Controlador {
             Integer.parseInt(Propriedades.pegarPropriedade("intervalo_sensor"));
 
     private static final Logger LOGGER = LogManager.getLogger(Controlador.class);
-    private static CameraMovimento detectorMovimento;
+    private CameraMovimento detectorMovimento;
+    private Monitoramento monitoramento;
 
-    private static class ControladorThread implements Callable<Integer> {
+    private class ControladorThread implements Callable<Integer> {
 
         public Integer call() throws Exception {
             monitorar();
@@ -39,12 +40,10 @@ public class Controlador {
 
         private void monitorar() {
             try {
-                final List<AtividadeSensor> sensores = Monitoramento.analisarDispositivos();
+                final List<AtividadeSensor> sensores = monitoramento.analisarDispositivos();
                 for (AtividadeSensor sensor : sensores) {
                     if (LOGGER.isDebugEnabled()) {
-                        LOGGER.debug("Tipo Dispositivo: " + sensor.getTipoDispositivo().getNome());
-                        LOGGER.debug("Status Code: " + sensor.getValor().getStatusCode());
-                        LOGGER.debug(sensor.getValor().getResposta());
+                        LOGGER.debug("Oferece risco: " + sensor.isOfereceRisco());
                     }
                 }
             } catch (IOException e) {
@@ -76,9 +75,13 @@ public class Controlador {
         }
     }
 
-    public static void main(String[] args) throws IOException {
+    public Controlador(Monitoramento monitoramento) {
         // Acionar detector de movimento
-        detectorMovimento = new CameraMovimento();
+        this.detectorMovimento = new CameraMovimento();;
+        this.monitoramento = monitoramento;
+    }
+
+    public void iniciarMonitoramento() {
         final ExecutorService threadpool =
                 Executors.newFixedThreadPool(Integer.parseInt(Propriedades.pegarPropriedade("num_threads")));
         while (true) {
@@ -93,5 +96,4 @@ public class Controlador {
             }
         }
     }
-
 }

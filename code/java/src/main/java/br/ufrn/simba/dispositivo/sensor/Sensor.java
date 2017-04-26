@@ -12,30 +12,28 @@ import java.io.IOException;
 public abstract class Sensor implements Dispositivo {
 
     private static final String ANALOGICO = "analog";
-    private static final String DIGITAL = "digital";
-    private static final String SENSOR = "sensor";
-    private static final String PORTA = "porta";
-    private static final String TIPO = "tipo";
+    private int porta;
+    private boolean analogico;
 
-    public HTTPRequester.RespostaHTTP receberDados() throws IOException {
-        return HTTPRequester.getInstance().get(analogico(), pegarPorta());
+    public Sensor(int porta, boolean analogico) {
+        this.porta = porta;
+        this.analogico = analogico;
     }
 
-    private int pegarPorta() {
-        return Integer.parseInt(
-                Propriedades.pegarPropriedade(SENSOR + "_" + pegarNome() + "_" + PORTA ));
+    public boolean receberDados() throws IOException {
+        final HTTPRequester.RespostaHTTP resposta =
+                HTTPRequester.getInstance().get(isAnalogico(), getPorta());
+        final Integer valor = Integer.parseInt(resposta.getResposta());
+        return checarValor(valor);
     }
 
-    private String pegarTipo() {
-        return Propriedades.pegarPropriedade(SENSOR + "_" + pegarNome() + "_" + TIPO);
+    abstract boolean checarValor(Integer valor);
+
+    public int getPorta() {
+        return porta;
     }
 
-    abstract String pegarNome();
-
-    private boolean analogico() {
-        final String s = pegarTipo();
-
-        return s.equals(ANALOGICO);
+    public boolean isAnalogico() {
+        return analogico;
     }
-
 }

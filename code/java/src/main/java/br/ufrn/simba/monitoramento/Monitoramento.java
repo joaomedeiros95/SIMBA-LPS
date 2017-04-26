@@ -13,30 +13,19 @@ import java.util.List;
 /**
  * Created by joao on 04/04/17.
  */
-public class Monitoramento {
+public abstract class Monitoramento {
 
-    private static final String[] dispositivos =
-            Propriedades.pegarPropriedade("sensores_habilitados").split(",");
-
-    private static final Dispositivo sensorMovimento = new Movimento();
-
-    public static List<AtividadeSensor> analisarDispositivos() throws IOException {
+    public List<AtividadeSensor> analisarDispositivos() throws IOException {
         final List<AtividadeSensor> resultado = new ArrayList<AtividadeSensor>();
-        if (verificaSensorHabilitado(Movimento.NOME)) {
-            resultado.add(new AtividadeSensor(TipoDispositivo.SENSOR_MOVIMENTO, sensorMovimento.receberDados()));
+        final List<Dispositivo> dispositivosMonitoramento = dispositivosAtivos();
+
+        for (Dispositivo dispositivo : dispositivosMonitoramento) {
+            resultado.add(new AtividadeSensor(dispositivo.receberDados()));
         }
 
         return resultado;
     }
 
-    private static boolean verificaSensorHabilitado(final String nomeDispostivo) {
-        for (String dispositivo : dispositivos) {
-            if (dispositivo.equals(nomeDispostivo)) {
-                return true;
-            }
-        }
-
-        return false;
-    }
+    public abstract List<Dispositivo> dispositivosAtivos();
 
 }

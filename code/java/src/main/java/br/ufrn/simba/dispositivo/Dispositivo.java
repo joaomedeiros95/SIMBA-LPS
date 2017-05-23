@@ -1,5 +1,7 @@
 package br.ufrn.simba.dispositivo;
 
+import br.ufrn.simba.model.Estado;
+
 import java.io.IOException;
 
 /**
@@ -7,6 +9,6 @@ import java.io.IOException;
  */
 public interface Dispositivo {
 
-    boolean receberDados() throws IOException;
+    Estado recuperarEstado() throws IOException;
 
 }

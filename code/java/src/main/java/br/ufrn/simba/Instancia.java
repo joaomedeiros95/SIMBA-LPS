@@ -1,8 +1,8 @@
 package br.ufrn.simba;
 
 import br.ufrn.simba.dispositivo.Dispositivo;
-import br.ufrn.simba.dispositivo.sensor.Movimento;
-import br.ufrn.simba.monitoramento.Monitoramento;
+import br.ufrn.simba.dispositivo.sensor.Som;
+import br.ufrn.simba.monitoramento.MonitorEvento;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,16 +13,8 @@ import java.util.List;
 public class Instancia {
 
     public static void main(String[] args) {
-        final Controlador controlador = new Controlador(new MonitoramentoImpl());
+        final Controlador controlador = new Controlador(new MonitorEvento());
         controlador.iniciarMonitoramento();
     }
 
-    static class MonitoramentoImpl extends Monitoramento {
-
-        public List<Dispositivo> dispositivosAtivos() {
-            List<Dispositivo> dispositivos = new ArrayList<Dispositivo>();
-            dispositivos.add(new Movimento(13, false));
-            return null;
-        }
-    }
 }

@@ -2,38 +2,33 @@ package br.ufrn.simba.dispositivo.sensor;
 
 import br.ufrn.simba.comunicacao.HTTPRequester;
 import br.ufrn.simba.dispositivo.Dispositivo;
+import br.ufrn.simba.model.Estado;
 import br.ufrn.simba.utils.Propriedades;
 
 import java.io.IOException;
+import java.util.Date;
 
 /**
  * Created by joao on 04/04/17.
  */
 public abstract class Sensor implements Dispositivo {
 
-    private static final String ANALOGICO = "analog";
     private int porta;
     private boolean analogico;
+    private String nome;
+    private Integer id;
 
-    public Sensor(int porta, boolean analogico) {
+    public Sensor(int porta, boolean analogico, String nome, Integer id) {
         this.porta = porta;
         this.analogico = analogico;
+        this.nome = nome;
+        this.id = id;
     }
 
-    public boolean receberDados() throws IOException {
+    public Estado recuperarEstado() throws IOException {
         final HTTPRequester.RespostaHTTP resposta =
-                HTTPRequester.getInstance().get(isAnalogico(), getPorta());
+                HTTPRequester.getInstance().get(this.analogico, this.porta);
         final Integer valor = Integer.parseInt(resposta.getResposta());
-        return checarValor(valor);
-    }
-
-    abstract boolean checarValor(Integer valor);
-
-    public int getPorta() {
-        return porta;
-    }
-
-    public boolean isAnalogico() {
-        return analogico;
+        return new Estado(new Date(), this.nome, valor, this.id);
     }
 }

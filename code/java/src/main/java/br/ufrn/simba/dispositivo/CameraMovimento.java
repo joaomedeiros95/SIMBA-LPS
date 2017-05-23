@@ -29,7 +29,7 @@ public class CameraMovimento implements WebcamMotionListener {
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("Movimento Detectado!");
         }
-        Controlador.acionarMedidaSeguranca(TipoDispositivo.CAMERA);
+//        Controlador.acionarMedidaSeguranca(TipoDispositivo.CAMERA);
     }
 
     public void acionarModoEconomia() {

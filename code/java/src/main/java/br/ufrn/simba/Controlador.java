@@ -1,18 +1,15 @@
 package br.ufrn.simba;
 
 import br.ufrn.simba.dispositivo.CameraMovimento;
-import br.ufrn.simba.model.AtividadeSensor;
 import br.ufrn.simba.model.TipoDispositivo;
 import br.ufrn.simba.monitoramento.Bateria;
-import br.ufrn.simba.monitoramento.Monitoramento;
-import br.ufrn.simba.seguranca.MedidasSeguranca;
+import br.ufrn.simba.monitoramento.MonitorEvento;
 import br.ufrn.simba.utils.Propriedades;
 import org.apache.commons.mail.EmailException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -27,7 +24,7 @@ public class Controlador {
 
     private static final Logger LOGGER = LogManager.getLogger(Controlador.class);
     private CameraMovimento detectorMovimento;
-    private Monitoramento monitoramento;
+    private MonitorEvento monitorEvento;
 
     private class ControladorThread implements Callable<Integer> {
 
@@ -40,8 +37,11 @@ public class Controlador {
 
         private void monitorar() {
             try {
-                final List<AtividadeSensor> sensores = monitoramento.analisarDispositivos();
+                final List<AtividadeSensor> sensores = monitorEvento.analisarDispositivos();
                 for (AtividadeSensor sensor : sensores) {
+                    if (sensor.isOfereceRisco()) {
+                        acionarMedidaSeguranca(TipoDispositivo.SENSOR_MOVIMENTO);
+                    }
                     if (LOGGER.isDebugEnabled()) {
                         LOGGER.debug("Oferece risco: " + sensor.isOfereceRisco());
                     }
@@ -75,10 +75,10 @@ public class Controlador {
         }
     }
 
-    public Controlador(Monitoramento monitoramento) {
+    public Controlador(MonitorEvento monitorEvento) {
         // Acionar detector de movimento
-        this.detectorMovimento = new CameraMovimento();;
-        this.monitoramento = monitoramento;
+        this.detectorMovimento = new CameraMovimento();
+        this.monitorEvento = monitorEvento;
     }
 
     public void iniciarMonitoramento() {

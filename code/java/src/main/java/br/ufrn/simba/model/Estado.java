@@ -13,12 +13,11 @@ public class Estado {
     // identificador único para o dispositivo
     private long hash;
 
-    public Estado(final Date data, final String nome, final Integer valor, final int id) {
+    public Estado(final Date data, final String nome, final Integer valor, final long hash) {
         this.data = data;
         this.nome = nome;
         this.valor = valor;
-        final String nomeComId = String.format("%s_%s", nome, id);
-        this.hash = nomeComId.hashCode();
+        this.hash = hash;
     }
 
     public Date getData() {
@@ -29,7 +28,7 @@ public class Estado {
         return nome;
     }
 
-    public Object getValor() {
+    public Integer getValor() {
         return valor;
     }
 

@@ -5,9 +5,8 @@ package br.ufrn.simba.dispositivo.seguranca;
  */
 public class Sirene extends DispositivoSeguranca {
 
-    public static final String NOME = "sirene";
-
-    String pegarNome() {
-        return NOME;
+    public Sirene(boolean analogico, int porta) {
+        super(analogico, porta);
     }
+
 }

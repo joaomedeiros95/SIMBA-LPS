@@ -1,5 +1,6 @@
 package br.ufrn.simba.seguranca;
 
+import br.ufrn.simba.model.Estado;
 import br.ufrn.simba.model.TipoDispositivo;
 import br.ufrn.simba.utils.Propriedades;
 import org.apache.commons.mail.DefaultAuthenticator;
@@ -7,6 +8,8 @@ import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.MultiPartEmail;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.List;
 
 /**
  * Created by joao on 04/04/17.
@@ -16,15 +19,14 @@ public class NotificacaoEmail extends Notificacao {
     private static final String[] EMAILS =
             Propriedades.pegarPropriedade("emails_notificacao").split(",");
     private static final String ASSUNTO = Propriedades.pegarPropriedade("email_assunto");
-    public static final String NOME = "email";
     private static final Logger LOGGER = LogManager.getLogger(NotificacaoEmail.class);
 
-    public void acionarAlerta(TipoDispositivo tipoDispositivo) throws EmailException {
+    public void acionarAlerta(final List<Estado> estados) throws EmailException {
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("Enviando email");
         }
 
-        this.tipoDispotivo = tipoDispositivo.getNome();
+        this.estadosSensores = estados;
 
         MultiPartEmail email = new MultiPartEmail();
         email.setHostName(Propriedades.pegarPropriedade("mail_hostname"));
@@ -48,12 +50,12 @@ public class NotificacaoEmail extends Notificacao {
 
     private String montarEmail() {
         final StringBuilder corpoEmail = new StringBuilder();
-        corpoEmail.append("Banco: " + NOME_BANCO);
-        corpoEmail.append("\nDispositivo: " + tipoDispotivo);
-        corpoEmail.append("\nHora do ocorrido: " + pegarHoraAtual());
-
-        if (informacaoAdicional != null && informacaoAdicional != "") {
-            corpoEmail.append("\nMais Informações: " + informacaoAdicional);
+        corpoEmail.append("Banco: ").append(NOME_BANCO);
+        corpoEmail.append("\n========= DISPOSITIVOS ACIONADOS =========");
+        for (final Estado estado : this.estadosSensores) {
+            corpoEmail.append("\nNome: ").append(estado.getNome());
+            corpoEmail.append("\nData: ").append(estado.getData());
+            corpoEmail.append("\nValor: ").append(estado.getValor());
         }
 
         return corpoEmail.toString();

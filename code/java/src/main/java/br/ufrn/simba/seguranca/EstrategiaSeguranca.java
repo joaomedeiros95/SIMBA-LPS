@@ -17,13 +17,17 @@ public abstract class EstrategiaSeguranca {
 
     private final List<Alerta> alertasHabilitados = new ArrayList<>();
 
-    abstract void execute(final List<Estado> estados);
+    public abstract void execute(final List<Estado> estados) throws IOException, EmailException;
 
     public void notificar(final List<Estado> estados) throws IOException, EmailException {
-        for (final Alerta alerta : alertasHabilitados) {
-            alerta.acionarAlerta(estados);
+        if (this.satisfazCondicoes()) {
+            for (final Alerta alerta : alertasHabilitados) {
+                alerta.acionarAlerta(estados);
+            }
         }
     }
+
+    protected abstract boolean satisfazCondicoes();
 
     public final void addAlerta(final Alerta alerta) {
         this.alertasHabilitados.add(alerta);

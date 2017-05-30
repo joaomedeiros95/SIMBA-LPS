@@ -1,15 +1,19 @@
 package br.ufrn.simba;
 
 import br.ufrn.simba.dispositivo.CameraMovimento;
+import br.ufrn.simba.model.Estado;
+import br.ufrn.simba.model.MonitorEstrategiaSeguranca;
 import br.ufrn.simba.model.TipoDispositivo;
 import br.ufrn.simba.monitoramento.Bateria;
 import br.ufrn.simba.monitoramento.MonitorEvento;
+import br.ufrn.simba.seguranca.EstrategiaSeguranca;
 import br.ufrn.simba.utils.Propriedades;
 import org.apache.commons.mail.EmailException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -24,7 +28,7 @@ public class Controlador {
 
     private static final Logger LOGGER = LogManager.getLogger(Controlador.class);
     private CameraMovimento detectorMovimento;
-    private MonitorEvento monitorEvento;
+    private final List<MonitorEstrategiaSeguranca> monitores;
 
     private class ControladorThread implements Callable<Integer> {
 
@@ -37,16 +41,15 @@ public class Controlador {
 
         private void monitorar() {
             try {
-                final List<AtividadeSensor> sensores = monitorEvento.analisarDispositivos();
-                for (AtividadeSensor sensor : sensores) {
-                    if (sensor.isOfereceRisco()) {
-                        acionarMedidaSeguranca(TipoDispositivo.SENSOR_MOVIMENTO);
-                    }
-                    if (LOGGER.isDebugEnabled()) {
-                        LOGGER.debug("Oferece risco: " + sensor.isOfereceRisco());
+                for (final MonitorEstrategiaSeguranca monitor : monitores) {
+                    final List<Estado> estados = monitor.getMonitorEvento().analisarDispositivos();
+
+                    // Chama estratégias de segurança cadastradas
+                    for (final EstrategiaSeguranca estrategiaSeguranca : monitor.getEstrategiasSeguranca()) {
+                        estrategiaSeguranca.execute(estados);
                     }
                 }
-            } catch (IOException e) {
+            } catch (Exception e) {
                 if (LOGGER.isErrorEnabled()) {
                     LOGGER.error("Um erro ocorreu ao analisar os dispositivos");
                 }
@@ -65,20 +68,10 @@ public class Controlador {
         }
     }
 
-    public static void acionarMedidaSeguranca(TipoDispositivo tipoDispositivo) {
-        try {
-            MedidasSeguranca.acionarMedida(tipoDispositivo);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (EmailException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public Controlador(MonitorEvento monitorEvento) {
+    public Controlador(final List<MonitorEstrategiaSeguranca> monitorEstrategiaSegurancas) {
         // Acionar detector de movimento
         this.detectorMovimento = new CameraMovimento();
-        this.monitorEvento = monitorEvento;
+        this.monitores = monitorEstrategiaSegurancas;
     }
 
     public void iniciarMonitoramento() {

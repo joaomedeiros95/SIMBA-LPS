@@ -53,6 +53,7 @@ public class Instancia {
         monitor.addEstrategiaSeguranca(new EstrategiaSegurancaFechadoMovimento());
         monitor.addEstrategiaSeguranca(new EstrategiaSegurancaFechadoCamera());
         monitor.addEstrategiaSeguranca(new EstrategiaSegurancaFechadoImpacto());
+        monitor.addEstrategiaSeguranca(new EstrategiaSegurancaFechadoCalor());
 
         final List<MonitorEstrategiaSeguranca> monitores = new ArrayList<>();
         monitores.add(monitor);

@@ -14,23 +14,29 @@ import java.util.List;
 /**
  * Created by joao on 10/06/17.
  */
-public class EstrategiaSegurancaAbertoImpacto extends EstrategiaSegurancaAberto {
+public class EstrategiaSegurancaFechadoCamera extends EstrategiaSegurancaFechado {
 
-    public EstrategiaSegurancaAbertoImpacto() {
+    public EstrategiaSegurancaFechadoCamera() {
         this.addAlerta(new NotificacaoEmail());
         this.addAlerta(new Sirene(false, 5));
-        this.addAlerta(new Bollands(false, 8));
         this.addAlerta(new NotificacaoPolicia());
     }
 
     @Override
     public void execute(List<Estado> estados) throws IOException, EmailException {
+        boolean notificar = false;
         for (final Estado estado : estados) {
-            if (estado.getHash() == Instancia.sensorImpactoHash) {
-                if (estado.getValor() >= 1) {
-                    notificar(estados);
-                }
+            if (estado.getHash() == Instancia.sensorMovimentoHash) {
+                notificar = estado.getValor() < 600;
             }
+
+            if (estado.getHash() == Instancia.cameraMovimentoHash) {
+                notificar = estado.getValor() == 1;
+            }
+        }
+
+        if (notificar) {
+            notificar(estados);
         }
     }
 }

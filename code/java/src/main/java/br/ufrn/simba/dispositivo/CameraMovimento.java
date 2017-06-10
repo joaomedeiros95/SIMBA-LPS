@@ -1,6 +1,7 @@
 package br.ufrn.simba.dispositivo;
 
 import br.ufrn.simba.Controlador;
+import br.ufrn.simba.model.Estado;
 import br.ufrn.simba.model.TipoDispositivo;
 import br.ufrn.simba.utils.Propriedades;
 import com.github.sarxos.webcam.Webcam;
@@ -10,13 +11,18 @@ import com.github.sarxos.webcam.WebcamMotionListener;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.IOException;
+import java.util.Date;
+
 /**
  * Created by joao on 04/04/17.
  */
-public class CameraMovimento implements WebcamMotionListener {
+public class CameraMovimento implements WebcamMotionListener, Dispositivo {
 
     private int intervaloCamera = Integer.parseInt(Propriedades.pegarPropriedade("intervalo_camera"));
     private static final Logger LOGGER = LogManager.getLogger(CameraMovimento.class);
+    private boolean movimentoDetectado = false;
+    public static final long HASH = 234567654;
 
     public CameraMovimento() {
         WebcamMotionDetector detector = new WebcamMotionDetector(Webcam.getDefault());
@@ -29,7 +35,7 @@ public class CameraMovimento implements WebcamMotionListener {
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("Movimento Detectado!");
         }
-//        Controlador.acionarMedidaSeguranca(TipoDispositivo.CAMERA);
+        this.movimentoDetectado = true;
     }
 
     public void acionarModoEconomia() {
@@ -46,5 +52,20 @@ public class CameraMovimento implements WebcamMotionListener {
         }
 
         intervaloCamera = Integer.parseInt(Propriedades.pegarPropriedade("intervalo_camera_bateria"));
+    }
+
+    @Override
+    public Estado recuperarEstado() throws IOException {
+        try {
+            final boolean retorno = this.movimentoDetectado;
+
+            if (retorno) {
+                return new Estado(new Date(), "Sensor de Movimento", 1, HASH);
+            } else {
+                return new Estado(new Date(), "Sensor de Movimento", 0, HASH);
+            }
+        } finally {
+            this.movimentoDetectado = false;
+        }
     }
 }

@@ -14,9 +14,9 @@ import java.util.List;
 /**
  * Created by joao on 10/06/17.
  */
-public class EstrategiaSegurancaAbertoImpacto extends EstrategiaSegurancaAberto {
+public class EstrategiaSegurancaFechadoImpacto extends EstrategiaSegurancaFechado {
 
-    public EstrategiaSegurancaAbertoImpacto() {
+    public EstrategiaSegurancaFechadoImpacto() {
         this.addAlerta(new NotificacaoEmail());
         this.addAlerta(new Sirene(false, 5));
         this.addAlerta(new Bollands(false, 8));

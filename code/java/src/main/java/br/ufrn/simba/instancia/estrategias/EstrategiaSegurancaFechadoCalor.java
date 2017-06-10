@@ -14,9 +14,9 @@ import java.util.List;
 /**
  * Created by joao on 10/06/17.
  */
-public class EstrategiaSegurancaAbertoImpacto extends EstrategiaSegurancaAberto {
+public class EstrategiaSegurancaFechadoCalor extends EstrategiaSegurancaFechado {
 
-    public EstrategiaSegurancaAbertoImpacto() {
+    public EstrategiaSegurancaFechadoCalor() {
         this.addAlerta(new NotificacaoEmail());
         this.addAlerta(new Sirene(false, 5));
         this.addAlerta(new Bollands(false, 8));
@@ -26,8 +26,8 @@ public class EstrategiaSegurancaAbertoImpacto extends EstrategiaSegurancaAberto 
     @Override
     public void execute(List<Estado> estados) throws IOException, EmailException {
         for (final Estado estado : estados) {
-            if (estado.getHash() == Instancia.sensorImpactoHash) {
-                if (estado.getValor() >= 1) {
+            if (estado.getHash() == Instancia.sensorCalorHash) {
+                if (estado.getValor() == 1) {
                     notificar(estados);
                 }
             }

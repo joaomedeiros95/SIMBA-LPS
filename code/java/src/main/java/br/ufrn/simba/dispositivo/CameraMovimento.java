@@ -60,9 +60,9 @@ public class CameraMovimento implements WebcamMotionListener, Dispositivo {
             final boolean retorno = this.movimentoDetectado;
 
             if (retorno) {
-                return new Estado(new Date(), "Sensor de Movimento", 1, HASH);
+                return new Estado(new Date(), "Sensor de Câmera", 1, HASH);
             } else {
-                return new Estado(new Date(), "Sensor de Movimento", 0, HASH);
+                return new Estado(new Date(), "Sensor de Câmera", 0, HASH);
             }
         } finally {
             this.movimentoDetectado = false;

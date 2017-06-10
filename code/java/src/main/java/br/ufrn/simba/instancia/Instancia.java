@@ -26,7 +26,7 @@ public class Instancia {
 
     public static void main(String[] args) {
         final MonitorEvento monitorEvento = new MonitorEvento();
-        final Impacto impacto = new Impacto(13, false,
+        final Impacto impacto = new Impacto(2, false,
                 "Sensor de Impacto", 1);
         final Calor calor = new Calor(10, false, "Sensor de Calor", 2);
         final Som som = new Som(3, true, "Sensor de Som", 3);

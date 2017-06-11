@@ -15,14 +15,14 @@ public class NotificacaoPolicia extends Notificacao {
     public void acionarAlerta(List<Estado> estados) throws EmailException, IOException {
         final StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("============= ATENÇÃO =============");
-        stringBuilder.append("Notificação Policial");
+        stringBuilder.append("\nNotificação Policial");
 
         for (final Estado estado : estados) {
-            stringBuilder.append("==========================");
+            stringBuilder.append("\n==========================");
             stringBuilder.append("\nNome: ").append(estado.getNome());
             stringBuilder.append("\nData: ").append(estado.getData());
             stringBuilder.append("\nValor: ").append(estado.getValor());
-            stringBuilder.append("==========================");
+            stringBuilder.append("\n==========================");
         }
     }
 }

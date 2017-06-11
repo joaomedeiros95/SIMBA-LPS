@@ -6,6 +6,7 @@ import br.ufrn.simba.instancia.Instancia;
 import br.ufrn.simba.model.Estado;
 import br.ufrn.simba.seguranca.NotificacaoEmail;
 import br.ufrn.simba.seguranca.NotificacaoPolicia;
+import br.ufrn.simba.seguranca.NotificacaoSlack;
 import org.apache.commons.mail.EmailException;
 
 import java.io.IOException;
@@ -21,6 +22,7 @@ public class EstrategiaSegurancaFechadoCalor extends EstrategiaSegurancaFechado 
         this.addAlerta(new Sirene(false, 5));
         this.addAlerta(new Bollands(false, 8));
         this.addAlerta(new NotificacaoPolicia());
+        this.addAlerta(new NotificacaoSlack());
     }
 
     @Override

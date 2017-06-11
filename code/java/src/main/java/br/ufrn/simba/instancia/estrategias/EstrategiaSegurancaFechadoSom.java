@@ -3,6 +3,7 @@ package br.ufrn.simba.instancia.estrategias;
 import br.ufrn.simba.instancia.Instancia;
 import br.ufrn.simba.model.Estado;
 import br.ufrn.simba.seguranca.NotificacaoEmail;
+import br.ufrn.simba.seguranca.NotificacaoSlack;
 import org.apache.commons.mail.EmailException;
 
 import java.io.IOException;
@@ -15,6 +16,7 @@ public class EstrategiaSegurancaFechadoSom extends EstrategiaSegurancaFechado {
 
     public EstrategiaSegurancaFechadoSom() {
         this.addAlerta(new NotificacaoEmail());
+        this.addAlerta(new NotificacaoSlack());
     }
 
     @Override

@@ -4,6 +4,7 @@ import br.ufrn.simba.dispositivo.seguranca.Sirene;
 import br.ufrn.simba.instancia.Instancia;
 import br.ufrn.simba.model.Estado;
 import br.ufrn.simba.seguranca.NotificacaoEmail;
+import br.ufrn.simba.seguranca.NotificacaoSlack;
 import org.apache.commons.mail.EmailException;
 
 import java.io.IOException;
@@ -17,6 +18,7 @@ public class EstrategiaSegurancaFechadoMovimento extends EstrategiaSegurancaFech
     public EstrategiaSegurancaFechadoMovimento() {
         this.addAlerta(new NotificacaoEmail());
         this.addAlerta(new Sirene(false, 5));
+        this.addAlerta(new NotificacaoSlack());
     }
 
     @Override

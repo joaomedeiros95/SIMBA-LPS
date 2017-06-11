@@ -1,10 +1,13 @@
 package br.ufrn.simba.comunicacao;
 
 import br.ufrn.simba.utils.Propriedades;
+import org.apache.http.HttpEntity;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.conn.ConnectTimeoutException;
+import org.apache.http.entity.ByteArrayEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.logging.log4j.LogManager;
@@ -22,6 +25,8 @@ public class HTTPRequester {
 
     private static final String ARDUINO_IP = Propriedades.pegarPropriedade("arduino_ip_ethernet");
     private static final String ARDUINO_IP_FALLBACK = Propriedades.pegarPropriedade("arduino_ip_wifi");
+    private static final String SLACK_URL = Propriedades.pegarPropriedade("slack_url");
+    private static final String CONTENT_TYPE_JSON = Propriedades.pegarPropriedade("application/json");
     private static final String ARUINO_PATH = "arduino";
     private static final int TIMEOUT_CONEXA0 = Integer.parseInt(Propriedades.pegarPropriedade("timeout_conexao"));
     private static HTTPRequester instance;
@@ -41,6 +46,35 @@ public class HTTPRequester {
 
     public RespostaHTTP get(final boolean analogico, final int porta, final int value) throws IOException {
         return this.get(analogico, porta, value, ARDUINO_IP);
+    }
+
+    public int post(final String mensagem) throws IOException {
+        return post(SLACK_URL, CONTENT_TYPE_JSON, mensagem);
+    }
+
+    private int post(final String url, final String contentType, final String mensagem) throws IOException {
+        if (LOGGER.isDebugEnabled()) {
+            LOGGER.debug("Enviando POST request para " + url);
+        }
+
+        final RequestConfig requestConfig = RequestConfig.custom()
+                .setConnectionRequestTimeout(TIMEOUT_CONEXA0)
+                .setConnectTimeout(TIMEOUT_CONEXA0)
+                .setSocketTimeout(TIMEOUT_CONEXA0)
+                .build();
+
+        final CloseableHttpClient clienteHTTP = HttpClients.createDefault();
+        final HttpPost httpPost = new HttpPost(url);
+        httpPost.setConfig(requestConfig);
+        httpPost.setHeader("Content-Type", contentType);
+
+        final String conteudo = "{\"text\":\"" + mensagem + "\"}";
+        final HttpEntity entity = new ByteArrayEntity(conteudo.getBytes());
+        httpPost.setEntity(entity);
+
+        final CloseableHttpResponse resposta = clienteHTTP.execute(httpPost);
+
+        return resposta.getStatusLine().getStatusCode();
     }
 
     private RespostaHTTP get(final boolean analogico, final int porta, final int value, final String ip)

@@ -23,6 +23,10 @@ public abstract class EstrategiaSegurancaAberto extends EstrategiaSeguranca {
     boolean isAberto() {
         final Calendar dataAtual = Calendar.getInstance();
 
+        return isAberto(dataAtual);
+    }
+
+    boolean isAberto(final Calendar dataAtual) {
         return isMaior(dataAtual, ABRE) && isMenor(dataAtual, FECHA);
     }
 
@@ -42,7 +46,18 @@ public abstract class EstrategiaSegurancaAberto extends EstrategiaSeguranca {
     }
 
     private boolean isMenor(final Calendar dataAtual, final String[] horarios) {
-        return !isMaior(dataAtual, horarios);
+        if (dataAtual.get(Calendar.HOUR_OF_DAY) < Integer.parseInt(horarios[0])) {
+            return true;
+        } else if (dataAtual.get(Calendar.HOUR_OF_DAY) == Integer.parseInt(horarios[0])
+                && dataAtual.get(Calendar.MINUTE) < Integer.parseInt(horarios[1])) {
+            return true;
+        } else if (dataAtual.get(Calendar.HOUR_OF_DAY) == Integer.parseInt(horarios[0])
+                && dataAtual.get(Calendar.MINUTE) == Integer.parseInt(horarios[1])
+                && dataAtual.get(Calendar.SECOND) <= Integer.parseInt(horarios[1])) {
+            return true;
+        }
+
+        return false;
     }
 }
 

@@ -32,7 +32,7 @@ public class EstrategiaSegurancaFechadoCamera extends EstrategiaSegurancaFechado
                 notificar = estado.getValor() < 600;
             }
 
-            if (estado.getHash() == Instancia.cameraMovimentoHash) {
+            if (notificar && estado.getHash() == Instancia.cameraMovimentoHash) {
                 notificar = estado.getValor() == 1;
             }
         }

@@ -2,9 +2,7 @@ package br.ufrn.simba.dispositivo.seguranca;
 
 import br.ufrn.simba.comunicacao.HTTPRequester;
 import br.ufrn.simba.model.Estado;
-import br.ufrn.simba.model.TipoDispositivo;
 import br.ufrn.simba.seguranca.Alerta;
-import br.ufrn.simba.utils.Propriedades;
 
 import java.io.IOException;
 import java.util.List;

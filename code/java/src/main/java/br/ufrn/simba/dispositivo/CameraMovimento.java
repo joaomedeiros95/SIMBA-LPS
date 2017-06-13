@@ -1,8 +1,6 @@
 package br.ufrn.simba.dispositivo;
 
-import br.ufrn.simba.Controlador;
 import br.ufrn.simba.model.Estado;
-import br.ufrn.simba.model.TipoDispositivo;
 import br.ufrn.simba.utils.Propriedades;
 import com.github.sarxos.webcam.Webcam;
 import com.github.sarxos.webcam.WebcamMotionDetector;

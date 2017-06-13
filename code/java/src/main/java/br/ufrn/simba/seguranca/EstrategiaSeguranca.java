@@ -1,9 +1,6 @@
 package br.ufrn.simba.seguranca;
 
-import br.ufrn.simba.dispositivo.seguranca.Sirene;
 import br.ufrn.simba.model.Estado;
-import br.ufrn.simba.model.TipoDispositivo;
-import br.ufrn.simba.utils.Propriedades;
 import org.apache.commons.mail.EmailException;
 
 import java.io.IOException;

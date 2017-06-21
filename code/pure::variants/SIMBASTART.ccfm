@@ -1,0 +1,618 @@
+<cm:consulmodel xmlns:cm="http://www.pure-systems.com/consul/model" cm:id="i-Oa80uI33yaCRJCa" cm:version="1.5" cm:type="ps:ccfm">
+  <cm:head>
+    <cm:properties>
+      <cm:property cm:id="iGcwhYlagU7Szttey" cm:type="ps:string" cm:invisible="true" cm:name="ps:name">
+        <cm:constant cm:id="imsfj3qYQ2sVriyFA" cm:type="ps:string">SIMBASTART</cm:constant>
+      </cm:property>
+      <cm:property cm:id="ivOPvB3knE-Y3ooj9" cm:type="ps:string" cm:invisible="true" cm:name="ps:author">
+        <cm:constant cm:id="i5CjPydqZYU6ZeKob" cm:type="ps:string">Danilo Damasceno</cm:constant>
+      </cm:property>
+      <cm:property cm:id="iPmokqsk6V3XW5R7n" cm:type="ps:string" cm:invisible="true" cm:name="ps:version">
+        <cm:constant cm:id="im6QxPxYuqMpn2B1n" cm:type="ps:string">1.0</cm:constant>
+      </cm:property>
+      <cm:property cm:id="iRDkNiPbadpK2pXeb" cm:type="ps:datetime" cm:invisible="true" cm:name="ps:created">
+        <cm:constant cm:id="i6iNwu4RgqzZ878CU" cm:type="ps:datetime">2017-06-19T00:39:18.452Z</cm:constant>
+      </cm:property>
+      <cm:property cm:id="ibjisomyjSRXVDJ6t" cm:type="ps:mimetype" cm:invisible="true" cm:name="ps:DescriptionType">
+        <cm:constant cm:id="if408u0QjGCRoKV4g" cm:type="ps:mimetype">text/html</cm:constant>
+      </cm:property>
+    </cm:properties>
+  </cm:head>
+  <cm:elements cm:rootid="i4zViXlTcubX2rkUO">
+    <cm:element cm:id="i4zViXlTcubX2rkUO" cm:name="SIMBASTART" cm:type="ps:family" cm:class="ps:family" cm:default="on">
+      <cm:relations cm:id="iU4AJbOiFBMYIuejT" cm:class="ps:children">
+        <cm:relation cm:id="iBKxGcyWwMie2Rxen" cm:type="ps:mandatory">
+          <cm:target cm:id="ihdKdtrlHpQCoih-J">./iKCQ15LVJ2zPX2M5P</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i5zCOqRGn93zRL3It" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iD9UL-ugvp9zmIbvF" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iEQSWKT6HbPaN7ada" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="izSfrpJtXvxSqBxQK" cm:type="ps:datetime">2017-06-19T00:39:18.452Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="igCHw4NvVjd4-JtgH" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iv5AxI6G3B2OYSeld" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iQpv69lBQrO0mIeIf" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iXQemQC-FzbAHThyo" cm:type="ps:datetime">2017-06-19T01:11:51.169Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+    </cm:element>
+    <cm:element cm:id="iKCQ15LVJ2zPX2M5P" cm:name="simba" cm:type="ps:component" cm:class="ps:component" cm:default="on">
+      <cm:relations cm:id="i3h9UFUL7sJ0059AV" cm:class="ps:parents">
+        <cm:relation cm:id="iAyfQYc1A74yz5QbF" cm:type="ps:parent">
+          <cm:target cm:id="ikkmlpsQTPFtfVVo7">./i4zViXlTcubX2rkUO</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iVsjy66Y6L5XbROpV" cm:class="ps:children">
+        <cm:relation cm:id="ic__27zBj_ymKIfYY" cm:type="ps:mandatory">
+          <cm:target cm:id="iyRMFKk7K9ulQCzVV">./ibJ5w8V4sqXUjZ9lP</cm:target>
+          <cm:target cm:id="ircWNRbNEKI5LbwJs">./iJWhP0WedSjX5wR3B</cm:target>
+          <cm:target cm:id="ifZX3hVfYX8Qt_I4A">./icy5YgcY9_XtRp5eK</cm:target>
+          <cm:target cm:id="iVLI4MCDyBvPURE5p">./iINw5kDsRAKSvchAQ</cm:target>
+          <cm:target cm:id="ift-I4fHURyTBxaOk">./iNdTIVXdz_vfUtcs5</cm:target>
+          <cm:target cm:id="i1if5jrFlgLxHZjDV">./i3sksTr32NYB3aGlp</cm:target>
+          <cm:target cm:id="iumbgkG9qKF6Dfl-t">./iejro3GAo7WOXQH3p</cm:target>
+          <cm:target cm:id="iXpSbRbBuQmFurfgA">./i7xwk-FjTRWY-SruS</cm:target>
+          <cm:target cm:id="ioIy8kngS9zwv-Byb">./iMF9ZOW4_0Q3_p2N3</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iuXg5AjBiuhVci_YM" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="itGaUGbuxeASncoyC" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i6-VE_TrEPbWqw0b5" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i4XRx5N2R9k2HOW_3" cm:type="ps:datetime">2017-06-19T00:53:08.812Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iV63GBEef0knnffkm" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i3iIAHbd0Eo-L5NXm" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iF5FohBXzTy_yyBRr" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iO-5fEkVP9qdqZaH1" cm:type="ps:datetime">2017-06-20T23:21:45.365Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iWhrCXRRvZQt61aQY" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
+          <cm:constant cm:id="iv_m3F3gNGzxVD1qf" cm:type="ps:directory">.</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ip747luvRwS8yNnlA" cm:type="ps:filetype" cm:inheritable="true" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="imzjwgi-bAiFfOu35" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="imsRdy3AcwmhsCXY5" cm:mimetype="text/plain" cm:encoding="utf-8">SIMBA</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ibJ5w8V4sqXUjZ9lP" cm:name="Instancia" cm:type="ps:class" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iCPPunlAZ8CrtmaOw" cm:class="ps:parents">
+        <cm:relation cm:id="i_kQKdf2-3JoUHeVh" cm:type="ps:parent">
+          <cm:target cm:id="itboAnKGEj1z78Zb9">./iKCQ15LVJ2zPX2M5P</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iNT_sSRK8iu3Xxnh8" cm:class="ps:children">
+        <cm:relation cm:id="iyJqHxnpgdtsEOFjP" cm:type="ps:mandatory">
+          <cm:target cm:id="iHzhlH56nAITpycif">./iqe-_S0vy-7BnY88P</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iA0uEavm-KVPoKQq4" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iql3ecVGTqE3nsaxj" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ij7dpDKLmGrxM34wF" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i2JWHbDu4jJkG4qpC" cm:type="ps:datetime">2017-06-19T01:31:17.924Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i97q_GbcH6R2tMQNi" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iQ4ZiivY-GP0-iPjg" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iOUtst5DNMwzH5TMU" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iBqaeKxz5JwL_f373" cm:type="ps:datetime">2017-06-19T01:33:32.415Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iuU672JdNfxSZWfh7" cm:mimetype="text/plain" cm:encoding="utf-8">Instancia</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iqe-_S0vy-7BnY88P" cm:type="ps:condtext" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iZ4_LG9o5pFNDQUG6" cm:class="ps:parents">
+        <cm:relation cm:id="iRQNfuW6wJFh3zh2Q" cm:type="ps:parent">
+          <cm:target cm:id="iJ9Nt2IUOZjgzkWSa">./ibJ5w8V4sqXUjZ9lP</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iLtrKTSwE7HZQC4pC" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="ixEMocdYAly8C9-r7" cm:type="ps:path">Instancia.java</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iTDO2XsKQVjq3Czcq" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iQ1FfDydMLkOLNi5u" cm:type="ps:filetype">def</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ixBkWbs5x-GFQoapL" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="inWH6qQW4sIrObw55" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iKp_ypqhLi1O4-T-n" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iAYCoGg2a3A3ulXGy" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iMuQp1z3NlgPGOGc4" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ijPEw5ppOT8_Of7xw" cm:type="ps:datetime">2017-06-19T01:33:32.415Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i34vYayY_cJuttjJe" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i5KmARRNuuFnMbrY0" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iP3ZwUJ3LYuL2l12p" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="i2isPjA-TlnuS-mhS" cm:type="ps:datetime">2017-06-19T01:33:32.415Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+    </cm:element>
+    <cm:element cm:id="iJWhP0WedSjX5wR3B" cm:name="EstrategiaSegurancaAbertoCalor" cm:type="ps:class" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iG3KpxM3_z-LLAGTG" cm:class="ps:parents">
+        <cm:relation cm:id="iFapm6xbW1lQew2On" cm:type="ps:parent">
+          <cm:target cm:id="iC2nrJ_UOHs-dQUQs">./iKCQ15LVJ2zPX2M5P</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="i-rrDOieJlDf__c-y" cm:class="ps:children">
+        <cm:relation cm:id="ilm58gvu8D_hMSsAT" cm:type="ps:mandatory">
+          <cm:target cm:id="iNHIkQ7mxevzUsV-Z">./iBhM45xh9Z_BMh8XI</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i-ihOLr41H8sX4zIz" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iPr8joa3X2gIx16-8" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="idpZ8HwyOgT-xegjN" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ivux952FAD6THea0E" cm:type="ps:datetime">2017-06-20T23:21:45.365Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iPBnyTH5dpshs0b7E" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i5FfEGv3XaxNfHRH0" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ifB8jm10I9-z3bGIf" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="issr2r5FMFG0MsgCP" cm:type="ps:datetime">2017-06-20T23:28:15.405Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iEmk8GAxJ2P2hEpoA" cm:mimetype="text/plain" cm:encoding="utf-8">EstrategiaSegurancaAbertoCalor</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iBhM45xh9Z_BMh8XI" cm:type="ps:condtext" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iISfxBfSEu10QaCUC" cm:class="ps:parents">
+        <cm:relation cm:id="ieYYS8e6jgEcKIVWy" cm:type="ps:parent">
+          <cm:target cm:id="iJAs-_AahxF5vHFmw">./iJWhP0WedSjX5wR3B</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iJd1bWDN5293blT9b" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="i0OX5qgWqkGJyMKJ1" cm:type="ps:path">EstrategiaSegurancaAbertoCalor.java</cm:constant>
+        </cm:property>
+        <cm:property cm:id="inJ5R10Y9MDoohBS-" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iRs3KMvsmUspbUvCA" cm:type="ps:filetype">def</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i1LoOPvcZf-ghrvfL" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="iMiGwkoNCNYtM6Jle" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
+        </cm:property>
+        <cm:property cm:id="it7aZvYG0n4o35Lje" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="i0rg4LDGoPya4DtQN" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iXZhYhBlyVzA-Oqvl" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ijPwMQDNP1YB_aiYB" cm:type="ps:datetime">2017-06-20T23:23:32.294Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iA2cfUJSHJjr1Dk3T" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="ih2snAuX0divK2RkN" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iK5rWT3Hjsgc2hS3u" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iCuguxEkn6uWN8c1d" cm:type="ps:datetime">2017-06-20T23:23:32.294Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+    </cm:element>
+    <cm:element cm:id="is6wqpwGNAkTe0c84" cm:type="ps:condtext" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iKZXpcI-3BO6QTqs7" cm:class="ps:parents">
+        <cm:relation cm:id="iwo4RZHW01f_XXBQP" cm:type="ps:parent">
+          <cm:target cm:id="ilLoolU_X-DWAByGR">./icy5YgcY9_XtRp5eK</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iDn_Bjerhvr4Ku3uL" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iknOi9v2Dc2uIpIxY" cm:type="ps:path">EstrategiaSegurancaAbertoSom.java</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iEpR2UWdKMf0FvroG" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iMry3GVNgPGk3rr9-" cm:type="ps:filetype">def</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ia91GahBivP9wjn6m" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="i1jCpmJz652YjNcG5" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
+        </cm:property>
+        <cm:property cm:id="icQjyauC-C8Osyuid" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iAxEl45mDnzMubOl0" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i0uSehF_e6A89Zv-C" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iLS1FHW2IFAnYFXSQ" cm:type="ps:datetime">2017-06-20T23:27:56.432Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iHTpVtXdp6OZ65ckp" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iBDA0x-jlnpYMxKh8" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iL3JKCZvOEA3woqOk" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="idfDXxL35QYJeI3MV" cm:type="ps:datetime">2017-06-20T23:31:47.755Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+    </cm:element>
+    <cm:element cm:id="icy5YgcY9_XtRp5eK" cm:name="EstrategiaSegurancaAbertoSom" cm:type="ps:class" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="i1FNdrE97GYwUeomA" cm:class="ps:parents">
+        <cm:relation cm:id="i2wItW4jNYLkie1oc" cm:type="ps:parent">
+          <cm:target cm:id="ioNII_Xq3Je9Numyj">./iKCQ15LVJ2zPX2M5P</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iOOWFNARbOQa3l_3R" cm:class="ps:children">
+        <cm:relation cm:id="if8R6GcMdCX3ShAYP" cm:type="ps:mandatory">
+          <cm:target cm:id="ifaAtcSagrHmIRtJz">./is6wqpwGNAkTe0c84</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iSSqf2xmq-lW5qr9-" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="ib8wc_PbuSG6oHypI" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iflwsNUbB078ULp1R" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i_x00_3xVK_qbZbOQ" cm:type="ps:datetime">2017-06-20T23:27:56.432Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="im6eRR3FicqLr2ycc" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iv0JfQ6vvnpA_-yC5" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iPc1YhmRDzW49M_6x" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iiIapEeFO12UmKkSi" cm:type="ps:datetime">2017-06-20T23:29:02.270Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iKUPMpKWpkcIZh9_c" cm:mimetype="text/plain" cm:encoding="utf-8">EstrategiaSegurancaAbertoSom</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i24nRVp2mVnRaq4F2" cm:type="ps:condtext" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iWAm9s8iXllzJL8Hu" cm:class="ps:parents">
+        <cm:relation cm:id="iNdTYqbXHySWRrVNo" cm:type="ps:parent">
+          <cm:target cm:id="iOo7gHnAGQYCa0XNF">./iINw5kDsRAKSvchAQ</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iedFHrqpX8-arEFt2" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iRS8dqyRASbgbbEV_" cm:type="ps:path">EstrategiaSegurancaAbertoImpacto.java</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i6PvM1WwHXTA0dXf3" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iskaNl5_w5iwKG3sc" cm:type="ps:filetype">def</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ikIWAbwSWnC6ZvOYf" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="iwabIurbu0_1Pv2z1" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
+        </cm:property>
+        <cm:property cm:id="if__AGKnJyGNxxDvZ" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="irxN6v23Ziyb3tcYA" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ipDA4qMwRGjDrn23z" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iI19KYJMLZQO2yjBh" cm:type="ps:datetime">2017-06-20T23:28:10.279Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iR11GWOUiicQCEeTI" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iPZ9fiGLmP5m47oqG" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i8qTEzvYAHo9eeIcT" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iO1vi8wDYnqFl95Jd" cm:type="ps:datetime">2017-06-20T23:32:31.220Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+    </cm:element>
+    <cm:element cm:id="iINw5kDsRAKSvchAQ" cm:name="EstrategiaSegurancaAbertoImpacto_2" cm:type="ps:class" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iBW--ESR55IWEQXLs" cm:class="ps:parents">
+        <cm:relation cm:id="inOBtYwh1MsmY1Q9z" cm:type="ps:parent">
+          <cm:target cm:id="i_OxnTtb2rwCOMYRN">./iKCQ15LVJ2zPX2M5P</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iMorAochtOskSW-ya" cm:class="ps:children">
+        <cm:relation cm:id="i-EeG22r8J0hD3mFe" cm:type="ps:mandatory">
+          <cm:target cm:id="iKVxplC1xg9uA55ET">./i24nRVp2mVnRaq4F2</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iI4qOq-6ssI8_UxF6" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="ieZd22ruKqok2TcHC" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iWDg3C3gqekVQKU1U" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iGDKJV8zMA7ttetkt" cm:type="ps:datetime">2017-06-20T23:28:10.279Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iPcpB4uS2cPg_xi7p" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i2Fb_Bkf6ds5LywF_" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i-yPVR7el-D7SdYn_" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iFdqM4VWZuL3IgNvA" cm:type="ps:datetime">2017-06-20T23:28:10.279Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ilzy82V6az_tjK9k_" cm:mimetype="text/plain" cm:encoding="utf-8">EstrategiaSegurancaAbertoImpacto</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iD8B6fdyLiaTGMOPv" cm:type="ps:condtext" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="i-mAr6uuMVQYED1yI" cm:class="ps:parents">
+        <cm:relation cm:id="i8nzGjt7iHLuc9JAl" cm:type="ps:parent">
+          <cm:target cm:id="iQf458N7-3m6vcOPX">./iNdTIVXdz_vfUtcs5</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="ibiuKTMHXV_nMpNOo" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iBVHWF4tG0cCdJCqU" cm:type="ps:path">EstrategiaSegurancaFechadoCalor.java</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iNSun_Jy2LjZUnvnr" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="il7QyP4HnMP5cZDD_" cm:type="ps:filetype">def</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iD0jbQwoLXuVaUTNI" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="iEjeM1H6prJcwOLwh" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
+        </cm:property>
+        <cm:property cm:id="im3vVJpq7v7ussyJ-" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iHF3PSo1NTCKzEIlW" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iQcI3TFGAwQt0cpsS" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iOm_ll84JLynXf7O8" cm:type="ps:datetime">2017-06-20T23:32:57.385Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="itPrik9_hl6bTneF1" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iQ_uI-DkooItkAdvX" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i4j89xy1T0GEQdaKK" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iiV-P6G4rSdOxY4l_" cm:type="ps:datetime">2017-06-20T23:34:05.422Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+    </cm:element>
+    <cm:element cm:id="iNdTIVXdz_vfUtcs5" cm:name="EstrategiaSegurancaFechadoCalor" cm:type="ps:class" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iTDm3g7h4W45bphSn" cm:class="ps:parents">
+        <cm:relation cm:id="iLcxjaWaGepigvsk1" cm:type="ps:parent">
+          <cm:target cm:id="iNSMnGXCx6Jv7xl7G">./iKCQ15LVJ2zPX2M5P</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iyeiy9EwBq_h5_DXy" cm:class="ps:children">
+        <cm:relation cm:id="iFFYDqQTgfQYcxFe0" cm:type="ps:mandatory">
+          <cm:target cm:id="iWklgIzq538bHogVe">./iD8B6fdyLiaTGMOPv</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iabGKG23aLOtjM8dp" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="i77UsvLQXb2N7qaOA" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ib5nVafp7ljn7Mp72" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ipR_Sa21DIDayK1oe" cm:type="ps:datetime">2017-06-20T23:32:57.385Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i54mzhZ5QnVHHyPig" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iWyC9gReW73N8DaMw" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iwTgl1eLybDmAdVOw" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iNi5Numg-lcZWCiqe" cm:type="ps:datetime">2017-06-20T23:33:30.769Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i4O8IzvImT2c_ImQp" cm:mimetype="text/plain" cm:encoding="utf-8">EstrategiaSegurancaFechadoCalor</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i8UrbDprG-VRLDok5" cm:type="ps:condtext" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iDkjS3TIVIuPoPV-A" cm:class="ps:parents">
+        <cm:relation cm:id="i5PnmoFXJSiFyGSuk" cm:type="ps:parent">
+          <cm:target cm:id="iUwC9sKguZ_hjX3XJ">./i3sksTr32NYB3aGlp</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iAtdPnoWVB70RM0L0" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iBGT16oa7RIeAzrJV" cm:type="ps:path">EstrategiaSegurancaFechadoCamera.java</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iHMvNaovUl1u2fHEK" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iPUp9zQXnMvAf04if" cm:type="ps:filetype">def</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iKDEWdSMzKTI8fns7" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="i_Jiz86kUbFVvz5Ru" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ixA6Xx8iknxuP67NF" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iYUt-b28HHB1kPkXx" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iYPxHibspnSxRpz-Y" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iQc0CxIcwGzFOCkyn" cm:type="ps:datetime">2017-06-20T23:34:31.972Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iJlMeZiSmhZ0EDsDn" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="ianiPOzCWMXOQwHBx" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iMKAlF-PA6JCVD_TB" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="izX70akY4lvKUWrAq" cm:type="ps:datetime">2017-06-20T23:35:04.327Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+    </cm:element>
+    <cm:element cm:id="i3sksTr32NYB3aGlp" cm:name="EstrategiaSegurancaFechadoCamera" cm:type="ps:class" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="irmsxVHM93nvVy5Xs" cm:class="ps:parents">
+        <cm:relation cm:id="iBj-QDdwQLvZhWVdN" cm:type="ps:parent">
+          <cm:target cm:id="isoVPEhgX2YH1AypW">./iKCQ15LVJ2zPX2M5P</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iASkftepcBtga-i5V" cm:class="ps:children">
+        <cm:relation cm:id="iHRpeLlkOC_BtSjoX" cm:type="ps:mandatory">
+          <cm:target cm:id="irFo7uBsZI4lljJjZ">./i8UrbDprG-VRLDok5</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iz8TrBesSNbAbMfrQ" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="ibwM99-yo3Ltv0VId" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="isv3r5GI7o2A0gXn1" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="io6AqjS_WSqXEqBPx" cm:type="ps:datetime">2017-06-20T23:34:31.972Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iCzKxf9l3YbjCF-SM" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i0WxR58Uxp5E4HW5Z" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iAtq4cF0NpwvkZd44" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="i2CyjJVvOtiL2nvJG" cm:type="ps:datetime">2017-06-20T23:34:52.720Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="inJqYZjopv4ArDdNd" cm:mimetype="text/plain" cm:encoding="utf-8">EstrategiaSegurancaFechadoCamera</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i-6b8nCE655vplgsj" cm:type="ps:condtext" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="izE9RVLKRq3dnoMpB" cm:class="ps:parents">
+        <cm:relation cm:id="iGeErM-6anKhGOxQU" cm:type="ps:parent">
+          <cm:target cm:id="ipFu9RAIpHXz075BQ">./iejro3GAo7WOXQH3p</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="igHorQwkd6tnv-fYt" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="ie8OVGHTDTil78tgB" cm:type="ps:path">EstrategiaSegurancaFechadoImpacto.java</cm:constant>
+        </cm:property>
+        <cm:property cm:id="izShLmL_3oa857y_8" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="it1-e-Y1ONmNFigGK" cm:type="ps:filetype">def</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iI2yJiJOtpWzxhZi_" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="ita_yWmlAwLMWkc2q" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i3f1zOLjeWcxDWmjT" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iSI460ZkaSLIu_lkH" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i7A9W-77jD8L9mHKX" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i_SxAOxSiqZN8GTa5" cm:type="ps:datetime">2017-06-20T23:35:20.014Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i9irFa5wXzpy0JJsu" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i0xCuFpH_PCBNaekA" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i1difkBQCgl38V7SW" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="i6HH1PZdPMx8kE01R" cm:type="ps:datetime">2017-06-20T23:35:43.830Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+    </cm:element>
+    <cm:element cm:id="iejro3GAo7WOXQH3p" cm:name="EstrategiaSegurancaFechadoImpacto" cm:type="ps:class" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="i6Qs_8M0HqVF2g0Wp" cm:class="ps:parents">
+        <cm:relation cm:id="iIYfUtv31zBMVswPJ" cm:type="ps:parent">
+          <cm:target cm:id="ifrPPNVbe65o-artM">./iKCQ15LVJ2zPX2M5P</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="ieyX6vcOmlcEyJfo1" cm:class="ps:children">
+        <cm:relation cm:id="ii8gtreyHg7vmqQV1" cm:type="ps:mandatory">
+          <cm:target cm:id="iOkM9ORF1tg5f6n3t">./i-6b8nCE655vplgsj</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iGk2OwiqevbQ50dpi" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="i6wZzDGmQT_S5zwsM" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="itz9unjA_Dmb3R2QX" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iuDOtqCNRwhY4bdgm" cm:type="ps:datetime">2017-06-20T23:35:20.014Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iXepueeWmGOJQSrN2" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="ikwDASpGvLcz3NzdJ" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iZplcgv4wMNnMRESI" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="ixHmnQ-6IaNxOIl_w" cm:type="ps:datetime">2017-06-20T23:35:33.064Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iQIpCQADeHar_7Dpy" cm:mimetype="text/plain" cm:encoding="utf-8">EstrategiaSegurancaFechadoImpacto</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i5zwPpMMnb7b45cWE" cm:type="ps:condtext" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iVNHTfLoecM2geTDd" cm:class="ps:parents">
+        <cm:relation cm:id="isoOWOmgZX0naTx2g" cm:type="ps:parent">
+          <cm:target cm:id="i8tUFPE-tlSxKWo_2">./i7xwk-FjTRWY-SruS</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iNWzZpPARzeB3xvMU" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="i-qCpAFLjQijQ77IP" cm:type="ps:path">EstrategiaSegurancaFechadoMovimento.java</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ilsPPdGxKrbQEOww_" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="i5ea6_j7CB7Lhptsj" cm:type="ps:filetype">def</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iftO-PhJOETN7VIuW" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="iYZUCUMdS8HFhbJUi" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iRNkG9MPxqhla9M6u" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iB3k6abWslD-eEn6N" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iQqGEJErsY4deyTPN" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iS9n0hxrKb7sETTyV" cm:type="ps:datetime">2017-06-20T23:35:58.144Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iL82EnaTOfHyJKVGW" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iSmJ-xpTX9_LcXUXM" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iS0YMxk-XlJp4kTny" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iHMUaFso0m4YquNcX" cm:type="ps:datetime">2017-06-20T23:36:34.094Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+    </cm:element>
+    <cm:element cm:id="i7xwk-FjTRWY-SruS" cm:name="EstrategiaSegurancaFechadoMovimento" cm:type="ps:class" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="ink-xwFQtbFf8K7cl" cm:class="ps:parents">
+        <cm:relation cm:id="iS6QMp2bZmDRmDVL2" cm:type="ps:parent">
+          <cm:target cm:id="imzszltkAJpwRR0ey">./iKCQ15LVJ2zPX2M5P</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iNX4ieknODbv1cdDw" cm:class="ps:children">
+        <cm:relation cm:id="iqaoyyLg1rfofrWIn" cm:type="ps:mandatory">
+          <cm:target cm:id="i2xQqxn0xm8BPbp1I">./i5zwPpMMnb7b45cWE</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i9nKMRTrcPqwaKlc4" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="ikne-0Wzpe2gzGoEB" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iIvHYjMlkA0u0ZqLb" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iA1ugfHcE5pn8-yW0" cm:type="ps:datetime">2017-06-20T23:35:58.144Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iRYBcUgroPYT3TYCy" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i75w20gMlHEa9a61Y" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ilUWkPW3ENcuO-EYg" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iicYEsQ8bsmLjLAMd" cm:type="ps:datetime">2017-06-20T23:36:14.591Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i-wUf0iTzwh9zHfft" cm:mimetype="text/plain" cm:encoding="utf-8">EstrategiaSegurancaFechadoMovimento</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iwYknF3TUk12XUXUw" cm:type="ps:condtext" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="ibpmQh52leNn-JWDy" cm:class="ps:parents">
+        <cm:relation cm:id="ieI9ulKCcMiYwJD4K" cm:type="ps:parent">
+          <cm:target cm:id="i_OCWRCTJhEbZJaIy">./iMF9ZOW4_0Q3_p2N3</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iFAo0tA5XpLukCNKG" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="i1em2yYZ-9ZmNEHDM" cm:type="ps:path">EstrategiaSegurancaFechadoSom.java</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iQvemmiXZdYCUWtvB" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="i2XkxOnUcxatweZbs" cm:type="ps:filetype">def</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ih-3YkuQMV0pfO0Y3" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="iNdsLrP-IGmXIVyUD" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ikA0NBE3pcb02d5jp" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iAwZYm9dEkZTYYR9_" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="io0-pnp4MSEBCAq4U" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i3xrJvCAndIFI8HDz" cm:type="ps:datetime">2017-06-20T23:36:43.187Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i_wIyJ6to9k6lOU0H" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i1HljcuXfiT55Bnmm" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iEcfg-6SmaWamXFFT" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iwPrvfntEAB7zjtnS" cm:type="ps:datetime">2017-06-20T23:37:04.188Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+    </cm:element>
+    <cm:element cm:id="iMF9ZOW4_0Q3_p2N3" cm:name="EstrategiaSegurancaFechadoSom" cm:type="ps:class" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iYchLP_RR0zuoUYCN" cm:class="ps:parents">
+        <cm:relation cm:id="ib3Ixst_xLfFITEG8" cm:type="ps:parent">
+          <cm:target cm:id="i1pgeP7uO5DB7GmrX">./iKCQ15LVJ2zPX2M5P</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iz9qS1OOyst5V-91I" cm:class="ps:children">
+        <cm:relation cm:id="iAiopp0uUfNxyK1Ye" cm:type="ps:mandatory">
+          <cm:target cm:id="iByA6DcNlsi2zo-EB">./iwYknF3TUk12XUXUw</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iaJNWv8Jp3cZvLiop" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iwVYIM_7gt20i25ME" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iqWxtP9zzxhVyqlT8" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ivJ5QJJW8FKwvu1Av" cm:type="ps:datetime">2017-06-20T23:36:43.187Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iB_5dWBBQ7aHjb0zk" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iVV_DWpQdhM8BYs45" cm:type="ps:string">Danilo Damasceno</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iti07uLsn9X_Mop_9" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iet3NNjzTKMsOomjt" cm:type="ps:datetime">2017-06-20T23:36:53.932Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="icZJWHCUlcI0nyqV6" cm:mimetype="text/plain" cm:encoding="utf-8">EstrategiaSegurancaFechadoSom</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+  </cm:elements>
+</cm:consulmodel>

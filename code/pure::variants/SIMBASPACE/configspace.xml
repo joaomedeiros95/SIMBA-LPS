@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cm:consulmodel xmlns:cm="http://www.pure-systems.com/consul/model" cm:id="i2iHh9enu-x9-7Yh6" cm:version="1.1" cm:type="ps:configspace"><cm:head></cm:head>
+<cm:elements cm:rootid="iDfRXO62gCkTa3HIV"><cm:element cm:id="iDfRXO62gCkTa3HIV" cm:class="ps:lookup"><cm:relations cm:id="iEYQL1vTioe-v8ucP" cm:class="ps:models"><cm:relation cm:id="iEMcS2MIFSYSxhM1S" cm:type="ps:used"><cm:target cm:id="iW59dFeoY07xwvCZm">./iBf9ZeMmewUAQJYrD</cm:target>
+<cm:target cm:id="ixsZtmCojaryzhglU">./iX4DwUycgPstVe9zj</cm:target>
+</cm:relation>
+</cm:relations>
+<cm:properties><cm:property cm:id="idUdmJCYHJwaSY8UQ" cm:type="ps:path" cm:name="module_base"><cm:constant cm:id="ikoE2QKpZZTDubVAw" cm:type="ps:path">$(WORKSPACE)</cm:constant>
+</cm:property>
+<cm:property cm:id="iKleW5egDeAV6KQzQ" cm:type="ps:path" cm:name="input_url"><cm:constant cm:id="i8SzCWGIFIMzD3BDD" cm:type="ps:path">$(PROJECT)/input</cm:constant>
+</cm:property>
+<cm:property cm:id="iUw7iCCpv2n_1MJi6" cm:type="ps:path" cm:name="output_url"><cm:constant cm:id="i4ExpG3mRwW_5XYdz" cm:type="ps:path">$(PROJECT)/output/$(VARIANT)</cm:constant>
+</cm:property>
+<cm:property cm:id="i6R_hm3yRuxEcCNXt" cm:type="ps:file" cm:name="transform_log"><cm:constant cm:id="ijSjOUcLa2tQakPoh" cm:type="ps:file">$(OUTPUT)/$(VARIANT).log</cm:constant>
+</cm:property>
+<cm:property cm:id="iBPZaL8fdZhZ_PLqq" cm:type="ps:path" cm:name="transform_module"><cm:constant cm:id="iie6W08xfCz7Fxsn1" cm:type="ps:path">$(PROJECT)/SIMBASPACE/moduleconfig.xml</cm:constant>
+</cm:property>
+<cm:property cm:id="iSmga-cdqm6mwMoia" cm:type="ps:string" cm:name="clear_dir"><cm:constant cm:id="i_7DkCD-qrGEnMuIc" cm:type="ps:string">true</cm:constant>
+</cm:property>
+<cm:property cm:id="iHtjEm8Hs9Iny5oPX" cm:type="ps:string" cm:name="conf_clear_dir"><cm:constant cm:id="iAZRtxsaTCUAKuZsI" cm:type="ps:string">true</cm:constant>
+</cm:property>
+<cm:property cm:id="iTBURJW78j-zlULOh" cm:type="ps:string" cm:name="create_dir"><cm:constant cm:id="ihHEt1BEVwrkTQrs8" cm:type="ps:string">true</cm:constant>
+</cm:property>
+<cm:property cm:id="iROXNHx0NHPIQ52Q4" cm:type="ps:string" cm:name="conf_create_dir"><cm:constant cm:id="ifDEBX9KJs9Pv8_Af" cm:type="ps:string">true</cm:constant>
+</cm:property>
+<cm:property cm:id="iUgNjXe4U8GIu4c_P" cm:type="ps:string" cm:name="recover"><cm:constant cm:id="ivWXSAez8dkLG8Wbd" cm:type="ps:string">true</cm:constant>
+</cm:property>
+</cm:properties>
+</cm:element>
+<cm:element cm:id="iBf9ZeMmewUAQJYrD" cm:name="iacLpN55b-lYQRB1F" cm:type="ps:used" cm:class="ps:model"><cm:properties><cm:property cm:id="i65dZZaCUX-ehzwFO" cm:type="ps:string" cm:name="model_type"><cm:constant cm:id="iqXKSk8gpHMJUToGf" cm:type="ps:string">ps:fm</cm:constant>
+</cm:property>
+<cm:property cm:id="i-VZqsPUvhjbnL0xS" cm:type="ps:path" cm:name="model_path"><cm:constant cm:id="i60wb3ZI_AFd7-Mow" cm:type="ps:path">$(PROJECT)/SIMBAPURE.xfm</cm:constant>
+</cm:property>
+<cm:property cm:id="ibPLzKmo0bn_U3G0-" cm:type="ps:integer" cm:name="model_rank"><cm:constant cm:id="iJhb4sGEsGieOxbaA" cm:type="ps:integer">1</cm:constant>
+</cm:property>
+</cm:properties>
+</cm:element>
+<cm:element cm:id="iX4DwUycgPstVe9zj" cm:name="i-Oa80uI33yaCRJCa" cm:type="ps:used" cm:class="ps:model"><cm:properties><cm:property cm:id="iDOVR78-45XJeEL2E" cm:type="ps:string" cm:name="model_type"><cm:constant cm:id="i5NsGpZbN_XfgXHCy" cm:type="ps:string">ps:ccfm</cm:constant>
+</cm:property>
+<cm:property cm:id="iGcl9GbdDr86GFKX4" cm:type="ps:path" cm:name="model_path"><cm:constant cm:id="ikj7Zh_I5f7AfYZM6" cm:type="ps:path">$(PROJECT)/SIMBASTART.ccfm</cm:constant>
+</cm:property>
+<cm:property cm:id="ik7lvBiqgnfvFaMBg" cm:type="ps:integer" cm:name="model_rank"><cm:constant cm:id="iYFderSoHO0yNNAxg" cm:type="ps:integer">1</cm:constant>
+</cm:property>
+</cm:properties>
+</cm:element>
+</cm:elements>
+</cm:consulmodel>

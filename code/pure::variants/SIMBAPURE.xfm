@@ -1,0 +1,762 @@
+<cm:consulmodel xmlns:cm="http://www.pure-systems.com/consul/model" cm:id="iacLpN55b-lYQRB1F" cm:version="1.5" cm:type="ps:fm">
+  <cm:head>
+    <cm:properties>
+      <cm:property cm:id="icj3p6s10w2tN4qmI" cm:type="ps:string" cm:invisible="true" cm:name="ps:name">
+        <cm:constant cm:id="iICIL8KgMoNDFAHzT" cm:type="ps:string">simba</cm:constant>
+      </cm:property>
+      <cm:property cm:id="ir7zGtO7-4LxPWfcL" cm:type="ps:string" cm:invisible="true" cm:name="ps:author">
+        <cm:constant cm:id="iWUlNkDXT52Gst1Zc" cm:type="ps:string">joao</cm:constant>
+      </cm:property>
+      <cm:property cm:id="ib6ua8PWKhgTyd2hn" cm:type="ps:string" cm:invisible="true" cm:name="ps:version">
+        <cm:constant cm:id="iLIk9wwx3eZw_Fg9K" cm:type="ps:string">1.0</cm:constant>
+      </cm:property>
+      <cm:property cm:id="iJSHAszrZfkCZpfeJ" cm:type="ps:datetime" cm:invisible="true" cm:name="ps:created">
+        <cm:constant cm:id="ix_sHiFOPc8dQkp29" cm:type="ps:datetime">2017-06-14T18:28:03.123Z</cm:constant>
+      </cm:property>
+      <cm:property cm:id="i-iIEf2CFLiZLhS2o" cm:type="ps:mimetype" cm:invisible="true" cm:name="ps:DescriptionType">
+        <cm:constant cm:id="ivM0tndcRkH0zScYd" cm:type="ps:mimetype">text/html</cm:constant>
+      </cm:property>
+    </cm:properties>
+  </cm:head>
+  <cm:elements cm:rootid="iugNQ3NYNjBIYb3le">
+    <cm:element cm:id="iugNQ3NYNjBIYb3le" cm:name="simba" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+      <cm:relations cm:id="iQa07A8rzBOaY1e4Z" cm:class="ps:children">
+        <cm:relation cm:id="i4L1j0GJ7t0QV_LPN" cm:type="ps:mandatory" cm:range="n">
+          <cm:target cm:id="iaIx_ujOWxYTR9Wrs">./iHgao5gWhX35GKw1t</cm:target>
+          <cm:target cm:id="il4NlDsQhO19e2ZHY">./i8hG6xyZN6RH9HV6g</cm:target>
+          <cm:target cm:id="iV5xNDZAUEGW-SRUb">./iByZHVnI8GmAynzMF</cm:target>
+          <cm:target cm:id="iPtLDOq0Ku8Yn-kgJ">./iEAEYvHOfYyY5DOoL</cm:target>
+          <cm:target cm:id="i-Dz9DA8i8CxlCdNu">./imA1YOW_BQiMc6ejI</cm:target>
+        </cm:relation>
+        <cm:relation cm:id="iS_RPpn-kP6nAb_a0" cm:type="ps:optional" cm:range="[0,n]">
+          <cm:target cm:id="iXbZ99v-p1Iwt_2K5">./i3Er1FaM7dZuc6REm</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iGgkGCy-rJ71WJdMy" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="ioB0CM-IFK31EjsNZ" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="im2Ls0r1_e73PBM-Y" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i0joRSUkaEgbaquft" cm:type="ps:datetime">2017-06-14T18:28:03.122Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iLkXX6VYJ34Uk75vz" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iDIlDkHsevuLuSrE_" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iG8fGj2Pq-ZIiqYjX" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iJxvqoEiw1WIj-yAq" cm:type="ps:datetime">2017-06-14T18:41:15.687Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+    </cm:element>
+    <cm:element cm:id="iHgao5gWhX35GKw1t" cm:name="conexao" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+      <cm:relations cm:id="i2KTX06R2N0WIpSY7" cm:class="ps:parents">
+        <cm:relation cm:id="ixnN30mE5tGrkGJfu" cm:type="ps:parent">
+          <cm:target cm:id="ia-6TNj0aWcm-lyOh">./iugNQ3NYNjBIYb3le</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="it9L2DGnZ5U0ad-P6" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="ihTKy32KZNJ41EF0D" cm:class="ps:children">
+        <cm:relation cm:id="ivpbjkDTKkaPRp8DC" cm:type="ps:mandatory">
+          <cm:target cm:id="itVJyoNc_uBb-WIPe">./iR2drwuq-FDQOFNTY</cm:target>
+        </cm:relation>
+        <cm:relation cm:id="iF-Yt6bEjbT03kat2" cm:type="ps:optional" cm:range="[0,n]">
+          <cm:target cm:id="iPJRYFGaswgLOjlEb">./iC42cRTx7JLKAgd8T</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="irDQw0FF5oiY0DQFN" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="i4yl85JWxtosA3X33" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i2HRw3AxM5thYTbKE" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iVo6u-uJdGdyDKAXI" cm:type="ps:datetime">2017-06-14T18:29:46.111Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iujcyfayiwCspgkON" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iJnyi-d_TWIAaqu2x" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iVZn5lV0gp9rgmOFl" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iUrL7wUOskT-IKdki" cm:type="ps:datetime">2017-06-14T18:34:13.501Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iIknravWFpx1IEnHI" cm:mimetype="text/plain" cm:encoding="utf-8">Conexão</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iR2drwuq-FDQOFNTY" cm:name="interna" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+      <cm:relations cm:id="ioBxcN3b9z_lvLQY_" cm:class="ps:parents">
+        <cm:relation cm:id="i_nWaYYGYEauGolc8" cm:type="ps:parent">
+          <cm:target cm:id="iptDPm-phdIyKgH2d">./iHgao5gWhX35GKw1t</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iPxxcthXCwU8Cvf47" cm:class="ps:children">
+        <cm:relation cm:id="i99Jqp-BvdrwynCb7" cm:type="ps:or" cm:range="[1,n]">
+          <cm:target cm:id="iSFQketH57WHG73TE">./iV4dJSzRbkPpLPMu1</cm:target>
+          <cm:target cm:id="ij7u6Q8vojpepZc4V">./iHIRv822zg_21du7j</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iclfQ485PoIfppGFv" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iIWYTakRv_OZndFxR" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iHL6_HYzqJaqTlIrv" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iVvxkW3ql4rIOxwOy" cm:type="ps:datetime">2017-06-14T18:30:08.435Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="igcxCJ9b7kYw_YXFf" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iwJZSVVll8195nQl4" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i_NEYSwpePReABGQa" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="ijPlc9E1BYfkqt6DX" cm:type="ps:datetime">2017-06-14T18:31:09.861Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ijdmyJJh9TYWiQh8B" cm:mimetype="text/plain" cm:encoding="utf-8">Interna</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iV4dJSzRbkPpLPMu1" cm:name="cabo" cm:type="ps:feature" cm:class="ps:feature">
+      <cm:relations cm:id="irW0x3xpftxqPAvP7" cm:class="ps:parents">
+        <cm:relation cm:id="i7x8SwsiPFxuM8aRz" cm:type="ps:parent">
+          <cm:target cm:id="iNKXZikmDrVY7JW4p">./iR2drwuq-FDQOFNTY</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iNzvlz3jA4zhCgOVg" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iIWNV0FJS7OWzYNTm" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ip_Vhrdo5CYWMbX0A" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iAhhmAgP7_p78B2QK" cm:type="ps:datetime">2017-06-14T18:30:50.235Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iFWVgZwudbYFRNjQo" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iNnLRTXvONtQIbJDB" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iMEFgKRxr_W_jKT2R" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iHK7m5pJKh9Un7dai" cm:type="ps:datetime">2017-06-14T18:30:50.235Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iFmFNXUFVQ-iAPdgb" cm:mimetype="text/plain" cm:encoding="utf-8">Cabo</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iHIRv822zg_21du7j" cm:name="wifi" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="ipCX49JoAJlLFKmBH" cm:class="ps:parents">
+        <cm:relation cm:id="iz-BW4huLexYLW723" cm:type="ps:parent">
+          <cm:target cm:id="iEI9KEavUT1WUag9Y">./iR2drwuq-FDQOFNTY</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i5enV-nIIlVY7slip" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="ihCUglytYJDgyjlAP" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iaisnWwrT7mWIDPhB" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ib9jv0lEfD01oKtmW" cm:type="ps:datetime">2017-06-14T18:31:09.861Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iuYicj2V9XUhKIYgM" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="icn5wMDURB3Nmu8be" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="idKDACcnmSeH9TAlD" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="idB6RSmaOZFvwQSpH" cm:type="ps:datetime">2017-06-14T18:31:09.861Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i0GGEYH_cI8BzXkYS" cm:mimetype="text/plain" cm:encoding="utf-8">Wi-Fi</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iC42cRTx7JLKAgd8T" cm:name="externa" cm:type="ps:feature" cm:class="ps:feature">
+      <cm:relations cm:id="iwwLF5tP9K-lw-p3f" cm:class="ps:parents">
+        <cm:relation cm:id="iT9JTVBBqxCNwSQ3H" cm:type="ps:parent">
+          <cm:target cm:id="iEK9gvMo93LH6TTOi">./iHgao5gWhX35GKw1t</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iiKO03GUU3ZwBrJoq" cm:class="ps:children">
+        <cm:relation cm:id="iCmBWgXhecKgV_Htr" cm:type="ps:alternative" cm:range="1">
+          <cm:target cm:id="iteIyXJ8KLPV8x0pP">./iMccNyoNu3hJuZNk3</cm:target>
+          <cm:target cm:id="iueuXz2GiVsU-wO33">./i8MkK-YNC_43-mEon</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iWqjhkNC-lu2G-SGn" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iOryIO4tG9Ef76cCB" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iXLGRL2n6LVrc3_H1" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iUuylOD0_wlmavMpq" cm:type="ps:datetime">2017-06-14T18:34:13.501Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="id2Odo36X2Y5FifK2" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="ii_99ogfZLjwOPqYf" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i-buD7tFVIhoMbQJS" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="ihtyRiSWMZPhA7YFU" cm:type="ps:datetime">2017-06-14T18:34:57.843Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iXS5Axh2Ht_fzScG7" cm:mimetype="text/plain" cm:encoding="utf-8">Externa</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iMccNyoNu3hJuZNk3" cm:name="_3g" cm:type="ps:feature" cm:class="ps:feature">
+      <cm:relations cm:id="iF-EjJtJsBTYnH2zO" cm:class="ps:parents">
+        <cm:relation cm:id="iaX-6mCoObS98dis4" cm:type="ps:parent">
+          <cm:target cm:id="i_dw2aaYVGL_P376X">./iC42cRTx7JLKAgd8T</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iIeoEUn7fUDn8dbBA" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iY9DLasmJigtz4cti" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i-fZoJmGh71AoV8gc" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="irf53x2bvYzDY5e4x" cm:type="ps:datetime">2017-06-14T18:34:45.242Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ixPi4BZmMLFECw6Pe" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i60md48QAL-9E6LAO" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ifPpWk_wkwCYYho1o" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iY7bVf8Y8_zDS_iYE" cm:type="ps:datetime">2017-06-14T18:34:45.242Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iWWiXiaMsWx9K9qyJ" cm:mimetype="text/plain" cm:encoding="utf-8">3G</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i8MkK-YNC_43-mEon" cm:name="_4g" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="idWtW_NplFf1yaTtY" cm:class="ps:parents">
+        <cm:relation cm:id="i7-088YN2sWrsDjAJ" cm:type="ps:parent">
+          <cm:target cm:id="iaEL8AR88oBwYjTpO">./iC42cRTx7JLKAgd8T</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i7ngdEqNfmHDOYIvj" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="i9vd8dI8aHJwUnywp" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iXFWjTH4XyZVuIXKc" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ibzcCf1SEn_rFvvKV" cm:type="ps:datetime">2017-06-14T18:34:57.843Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ibAWxsff57MSvh2qv" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i4sGG2sw-5M1TWal1" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iD68tk_4AmY3WPC8Z" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iwzmo32PtUzxJUqzw" cm:type="ps:datetime">2017-06-14T18:34:57.843Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="it5YDxhAFeUHKRpKT" cm:mimetype="text/plain" cm:encoding="utf-8">4G</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i8hG6xyZN6RH9HV6g" cm:name="redundancia_eletrica" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+      <cm:relations cm:id="ixxoUusRaz77Y0QvR" cm:class="ps:parents">
+        <cm:relation cm:id="iMW4kw8J3re2G5ppN" cm:type="ps:parent">
+          <cm:target cm:id="iHobwxpJA-dCpvynX">./iugNQ3NYNjBIYb3le</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="idzvK1wq9qplT7jQp" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="i_EwxjxUyVOmxO-Le" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i4qCczrFhuIuI4ITV" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iT6Uxc-0PdyZbTFs8" cm:type="ps:datetime">2017-06-14T18:35:25.924Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i6wslIZ3UYH6va7gY" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="ibB0JeYsczh9K6bwm" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iwA7rkjtFN1o5DJN-" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iiCJjRPsUj36BzWug" cm:type="ps:datetime">2017-06-14T18:35:25.924Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iQn46xbStgdWEKTxm" cm:mimetype="text/plain" cm:encoding="utf-8">Redundância Elétrica</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i3Er1FaM7dZuc6REm" cm:name="sensores" cm:type="ps:feature" cm:class="ps:feature">
+      <cm:relations cm:id="i2hBB6pq9OxjNp4mO" cm:class="ps:parents">
+        <cm:relation cm:id="i3lxDJ4EAh1evtAl9" cm:type="ps:parent">
+          <cm:target cm:id="iBIMprZUmWkinSH72">./iugNQ3NYNjBIYb3le</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iG4yDmc9R2SJg0fkT" cm:class="ps:children">
+        <cm:relation cm:id="iJxeKOFwNFheE9Up9" cm:type="ps:or" cm:range="[1,n]">
+          <cm:target cm:id="iZRhNJBCfbMBkpl_N">./iFnETFKvZ4q-94IR4</cm:target>
+          <cm:target cm:id="iEu-MoQj9G1X4qoqv">./iqa5godjuW6LshLWc</cm:target>
+          <cm:target cm:id="i2qB0N2ER1do8n3If">./ibj89aCbSqLGJsnJC</cm:target>
+          <cm:target cm:id="iA-SdZSB83u-xsbqx">./iVX3cpqHei_085lC-</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="idIpxq39rSS6fYqxG" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="irjxqf9Agbx1G-Sm5" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ivbITSW15hxsSdITl" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i0U6Gb4o3UPvrJ2u4" cm:type="ps:datetime">2017-06-14T18:35:50.745Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="isVyV1loF-Pb2IE8p" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="idsLMrtMkKWfU0F07" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ikB3whEPq15ubHm84" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iW4ErB2Hg_bynt3OD" cm:type="ps:datetime">2017-06-14T18:36:48.076Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iOxAdFh7UB2BaFMMS" cm:mimetype="text/plain" cm:encoding="utf-8">Sensores</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iFnETFKvZ4q-94IR4" cm:name="movimento" cm:type="ps:feature" cm:class="ps:feature">
+      <cm:relations cm:id="ihHunY7Cs3hRvjH1w" cm:class="ps:parents">
+        <cm:relation cm:id="i9vWVjf6bDbFQpStb" cm:type="ps:parent">
+          <cm:target cm:id="iUVTHrTGOrxpXN1zY">./i3Er1FaM7dZuc6REm</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="igckJNst5uH1RqO37" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="irk7NsXFOr1jyWlF5" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iUy4D8KRE4pUv3wUu" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iAw7fGpxPBNOydM8S" cm:type="ps:datetime">2017-06-14T18:36:14.565Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iSpdsn9i_vuXtEnu9" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="ihRLFHNxQW_BVq7I_" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ixG6Eavy0oPcYQZ6s" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iqQ_0F_lO4SViCFmJ" cm:type="ps:datetime">2017-06-14T18:36:14.565Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iigLrw40Moj811e7C" cm:mimetype="text/plain" cm:encoding="utf-8">Movimento</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iqa5godjuW6LshLWc" cm:name="calor" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="iGEHXmzIcQLDI6MQL" cm:class="ps:parents">
+        <cm:relation cm:id="iZDYPR6NRzz4RzW7O" cm:type="ps:parent">
+          <cm:target cm:id="ibuCbdCq2wcLQWfFl">./i3Er1FaM7dZuc6REm</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iGw_ieSm5WSKsoX6J" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="i7IK5edMkEhub6Bxs" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iZ6AnqXh0gLydt5zX" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="imo873q11pMfxj-kZ" cm:type="ps:datetime">2017-06-14T18:36:27.256Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iefspsyDcz_RDy3kj" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iLGaIi9siJMT98R8q" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iYw0tgCtALYYrs6Jn" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="i6a8VRw5cYS9grMOx" cm:type="ps:datetime">2017-06-14T18:36:27.256Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ia0fNAYu14PuTZkIU" cm:mimetype="text/plain" cm:encoding="utf-8">Calor</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ibj89aCbSqLGJsnJC" cm:name="impacto" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="iDIp0gP6smIP5vRxV" cm:class="ps:parents">
+        <cm:relation cm:id="iBntL-dcToJmgL2F1" cm:type="ps:parent">
+          <cm:target cm:id="igEHCg5hoWPVM8vHf">./i3Er1FaM7dZuc6REm</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="ifyuooL_Q5ATnqu6T" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="i17w4pbnPitnQPCsZ" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iFiiuVydvj6PClUnB" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iGoMqEoICODUuNc4s" cm:type="ps:datetime">2017-06-14T18:36:38.383Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i0Ut2WvZKjvqqWW4E" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iVskwujx_Q80f7Tpl" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ikZEjvlEpdwam5C08" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iAgSxZPtHcigqWOUk" cm:type="ps:datetime">2017-06-14T18:36:38.383Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i0WfUdd5aBJXN6ZgW" cm:mimetype="text/plain" cm:encoding="utf-8">Impacto</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iVX3cpqHei_085lC-" cm:name="som" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="i0TnJ8yjqyuvsSEah" cm:class="ps:parents">
+        <cm:relation cm:id="iX2ZreZ_bv6lGhAMA" cm:type="ps:parent">
+          <cm:target cm:id="ihqcyZuHiV_SVuxXK">./i3Er1FaM7dZuc6REm</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iMkRMUqHlCw4tuJ4-" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iSJxjZpCpFXgZXsE1" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="izkn8kiOHuqaut9q-" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i8ZmQ48VDnqr3ItwJ" cm:type="ps:datetime">2017-06-14T18:36:48.076Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iHc8iJ4bTtG-kZoVo" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iH2Jf38uqMz3evIf0" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iLHFW35NoaD1gx0Yi" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="idTS4Xzur0LP0pUT1" cm:type="ps:datetime">2017-06-14T18:36:48.076Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="itQeYH0aIooMfJxrc" cm:mimetype="text/plain" cm:encoding="utf-8">Som</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iByZHVnI8GmAynzMF" cm:name="monitoramento_camera" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+      <cm:relations cm:id="iEy2brskf46u7YDxR" cm:class="ps:parents">
+        <cm:relation cm:id="if6rqRmot3pRb9wTi" cm:type="ps:parent">
+          <cm:target cm:id="isyCnsQySRHSI2JX0">./iugNQ3NYNjBIYb3le</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iOfvh9oRnf1tpGDqA" cm:class="ps:children">
+        <cm:relation cm:id="i5--3w1DEMzn_9ARd" cm:type="ps:alternative" cm:range="1">
+          <cm:target cm:id="i5NFCTjLrg5puXSda">./idMGjiE5wzPc8Igtc</cm:target>
+          <cm:target cm:id="iGbe03evbM4yrT6L4">./iGR9GMIHo3ThYlcH9</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iYy1PZSMGiLIV4qMc" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iTl4U5s81EyGaBtCN" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iDvHfY6MslTfHITqB" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iEtixWJrSFX3k7bfV" cm:type="ps:datetime">2017-06-14T18:37:19.437Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i_YfikIvCl0IKkxZY" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i4ufLJ27NGV6a4Efw" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iEQNonvKKjftY36wU" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iqIomJjd7QhDglCmZ" cm:type="ps:datetime">2017-06-14T18:38:08.140Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ieANkk-jYeyNvDcF0" cm:mimetype="text/plain" cm:encoding="utf-8">Monitoramento Câmera</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="idMGjiE5wzPc8Igtc" cm:name="camera_unica" cm:type="ps:feature" cm:class="ps:feature">
+      <cm:relations cm:id="iMTHus1-O9zTSILdD" cm:class="ps:parents">
+        <cm:relation cm:id="i7KESZMaPBxArf3NL" cm:type="ps:parent">
+          <cm:target cm:id="in-tiBuj6VJ_4wG5f">./iByZHVnI8GmAynzMF</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iTlTe1b5IavSKS1sd" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iSbE7EsWWaVEEzq5M" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iOQ2wlnL7DhiO6mzb" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ioxtkLIXRgvE6Ukvc" cm:type="ps:datetime">2017-06-14T18:37:53.220Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i_TdYtQ0te12rrz9m" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iGUHDUnJ7h_IGgvoQ" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iz4sBJpjmAfOfJql1" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="ilaefM0ljg4JA8pYT" cm:type="ps:datetime">2017-06-14T18:37:53.220Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iocL5klEtY6eo7WdO" cm:mimetype="text/plain" cm:encoding="utf-8">Câmera Única</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iGR9GMIHo3ThYlcH9" cm:name="multicamera" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="idavgFfA_H-LfO_FZ" cm:class="ps:parents">
+        <cm:relation cm:id="iMeb9EWKj2QXl15Hg" cm:type="ps:parent">
+          <cm:target cm:id="ibzELMWR00GNuHRN4">./iByZHVnI8GmAynzMF</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iLnqhv9_Jgo1jPn21" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iPjp4Lq6COiZHEADR" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="isXB2CbgUGQU4sYU2" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ih3upPNOUEIssshhN" cm:type="ps:datetime">2017-06-14T18:38:08.140Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iXRGqyQgMcJ8QqpMn" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="ilfdNdeeEwp9KRHoY" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i5U8zwnywlEI3BwQS" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="i2_wE4UmS7b7OD5D8" cm:type="ps:datetime">2017-06-14T18:38:08.140Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ihvJSZuOU1DIkW-nS" cm:mimetype="text/plain" cm:encoding="utf-8">Multicâmera</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iEAEYvHOfYyY5DOoL" cm:name="acionador_dispositivos" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+      <cm:relations cm:id="iP8c6lcE76Ht_alku" cm:class="ps:parents">
+        <cm:relation cm:id="iO7Iq6b8NuX1W_B6j" cm:type="ps:parent">
+          <cm:target cm:id="iSaYfNdXZt7qu8HIa">./iugNQ3NYNjBIYb3le</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iVd-42jTNH-AmsqEx" cm:class="ps:children">
+        <cm:relation cm:id="iPC7HK9etHw5l4C4p" cm:type="ps:mandatory">
+          <cm:target cm:id="i0sDj2dU8-xEGXiBc">./i3LTbQ9YADjOtHu3c</cm:target>
+        </cm:relation>
+        <cm:relation cm:id="itpNa11vGV0xi0Enq" cm:type="ps:optional" cm:range="[0,n]">
+          <cm:target cm:id="iCXbUThl3TguBJlYN">./iOhvbkrDU7DmkIlKH</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iaYtpTlE950iBxSCJ" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="ibJv2-5LliX4EwyBv" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ikaolFyV9QANS1M_Z" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iCnnl2Uk6veL5rsf-" cm:type="ps:datetime">2017-06-14T18:38:34.023Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iD0wUpYtKtO3RTwxl" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i34mkUvXpWpsLFYQC" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ii6hz8wK0LveUalIX" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="i03nL5xIWBwi-EhVs" cm:type="ps:datetime">2017-06-14T18:39:19.725Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iNpVRrdRXqbwrCtMi" cm:mimetype="text/plain" cm:encoding="utf-8">Acionador de Dispositivos</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i3LTbQ9YADjOtHu3c" cm:name="central_alarmes" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+      <cm:relations cm:id="iPSUo885UUURYYOmw" cm:class="ps:parents">
+        <cm:relation cm:id="i1U40NoA0ixG_mQVF" cm:type="ps:parent">
+          <cm:target cm:id="ilUgSknb-JyE5gZwP">./iEAEYvHOfYyY5DOoL</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iFk6m99OZ301JsGFt" cm:class="ps:children">
+        <cm:relation cm:id="iDyNPEQpK-tVgHwJN" cm:type="ps:or" cm:range="[1,n]">
+          <cm:target cm:id="ilWcxSo8UuFFgwwV2">./iJaliJKex9rQfC_Pi</cm:target>
+          <cm:target cm:id="iV2KJdkAQebOD2YEQ">./iUyksbaG-Duz0SjNZ</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iZ5jds5vAppqwObrz" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="il3jvijXnXpOVynW1" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iB4khjjcvQyj7wIo_" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="irIZ87WFaJ0uzv0sf" cm:type="ps:datetime">2017-06-14T18:39:00.045Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i7FPeDmEZlneyqRYU" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iHXLwD4V5p38o8w9e" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iGyz8Ogd34U2ZmH8l" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iDNPr9fJY-mKg6GgV" cm:type="ps:datetime">2017-06-14T18:39:58.900Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="igJT2NPAm8NaZ4AsL" cm:mimetype="text/plain" cm:encoding="utf-8">Central de Alarmes</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iOhvbkrDU7DmkIlKH" cm:name="central_dispositivos" cm:type="ps:feature" cm:class="ps:feature">
+      <cm:relations cm:id="iltXYMY3MVfg8BjMP" cm:class="ps:parents">
+        <cm:relation cm:id="iyE_uuxDNjJ25ppal" cm:type="ps:parent">
+          <cm:target cm:id="i9VxH5uynbPE_myX6">./iEAEYvHOfYyY5DOoL</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iCVPB89cjdE2PEoXB" cm:class="ps:children">
+        <cm:relation cm:id="iAKbK9AuOF9L76SMB" cm:type="ps:or">
+          <cm:target cm:id="iPddtf8hsDXvV9VgR">./ilzqvUFY3nU71QA_U</cm:target>
+          <cm:target cm:id="ikO20PPHRIqz1pZBV">./ijOfjgH7_05HqPf-S</cm:target>
+          <cm:target cm:id="ifd3nydmb_pEAfr-R">./iuwyuY7bxs7jZ6ox2</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="icxTZKKRYAJCjj8FN" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="ilcozsVDLneCSwggw" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iYlzl27lHM5U9ueBg" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iz9Nvk4zYdwlnYgJO" cm:type="ps:datetime">2017-06-14T18:39:19.725Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iNGFz6GSVoOor5Uwk" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="ib2Aa4D-zXmUFawVB" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iZJtsChhBUL7z9rvW" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="i8fUKqXYWLJy1JcuR" cm:type="ps:datetime">2017-06-14T18:40:52.580Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i_k7iF8kV3tlA9jjg" cm:mimetype="text/plain" cm:encoding="utf-8">Central de Dispositivos</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iJaliJKex9rQfC_Pi" cm:name="sirenes" cm:type="ps:feature" cm:class="ps:feature">
+      <cm:relations cm:id="its_7ctHB8_VE8jtO" cm:class="ps:parents">
+        <cm:relation cm:id="i09azslAM9iOKrp9B" cm:type="ps:parent">
+          <cm:target cm:id="isJNsRheUPajaZ3vN">./i3LTbQ9YADjOtHu3c</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="ikQ7zaPEBiAUxOGyS" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iyGSC9dnTcKENl0uT" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iW8d604rbuGA0ROCq" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i5-b-hZvMAlk4vlTY" cm:type="ps:datetime">2017-06-14T18:39:44.067Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iJ5ioNZkSXNB_UFGD" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="ildIZoXUOsXnpIMNu" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iG11klHCxmHJRJVJD" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="ih_2YlOOAOnlb5Oe8" cm:type="ps:datetime">2017-06-14T18:39:44.067Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="idcG_UOQRKcvCSJzi" cm:mimetype="text/plain" cm:encoding="utf-8">Sirenes</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iUyksbaG-Duz0SjNZ" cm:name="luzes" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="iR2zRiVcCL8BEYR5p" cm:class="ps:parents">
+        <cm:relation cm:id="i3L2LPefpH7x2oz5e" cm:type="ps:parent">
+          <cm:target cm:id="i7C2gnD10ntWVjM6K">./i3LTbQ9YADjOtHu3c</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iZocLMdnxnUgfBLGP" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iu2-CDnzIPlsi9Whb" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="izzUUAMTXY0C5PYdY" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iuse8rPKgeVk1Z8Wg" cm:type="ps:datetime">2017-06-14T18:39:58.900Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iiUgR2M78q-hbqk3_" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iNB_hrZJxvuLNhd76" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i7tV-h0SEXa6ndtdU" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iSVhsGKnbTqTG2ukD" cm:type="ps:datetime">2017-06-14T18:39:58.900Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i7T9sjjJbhn9Iva7a" cm:mimetype="text/plain" cm:encoding="utf-8">Luzes</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ilzqvUFY3nU71QA_U" cm:name="fumaca" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="i7RDYSR29wLx6zrxJ" cm:class="ps:parents">
+        <cm:relation cm:id="iCn_gN87jajt60T2C" cm:type="ps:parent">
+          <cm:target cm:id="iwIjH6Secict1W_wg">./iOhvbkrDU7DmkIlKH</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i7myTxZ9-JmHV7e_E" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="ihs_BYdlRhb8qpUxg" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i5aSXtO03puC2IL_K" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="icqky3UFG2XNlknfI" cm:type="ps:datetime">2017-06-14T18:40:20.886Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iNcoh-5EpMdJ_7mzt" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i2fmM-yGyqecuCxiS" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iabheqylbvfGKF6SH" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="ioloEqczGfDS2n0DR" cm:type="ps:datetime">2017-06-14T18:40:20.886Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iWZBjAqFb-K3vJkNI" cm:mimetype="text/plain" cm:encoding="utf-8">Fumaça</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ijOfjgH7_05HqPf-S" cm:name="bollands" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="iCwwueu-VKeGbqfLm" cm:class="ps:parents">
+        <cm:relation cm:id="iXFV7atlYPhhtd7bf" cm:type="ps:parent">
+          <cm:target cm:id="iCcDoMUxrnfgK1zut">./iOhvbkrDU7DmkIlKH</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iHoJcyN7OZ-X3eIpp" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iko-7RstBUtAhnDl1" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="inMNnBelrAD61fe-f" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="icfgCC8zCZkUi3ErN" cm:type="ps:datetime">2017-06-14T18:40:38.530Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ix0WK-aJfJcltJXTp" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iYCwro4L0a45UJtQn" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iHedk9MJ7XsGpe1dC" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="i215_fCroyIH2sO9L" cm:type="ps:datetime">2017-06-14T18:40:38.530Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iuQ6N-Huz825iiK2C" cm:mimetype="text/plain" cm:encoding="utf-8">Bollands</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iuwyuY7bxs7jZ6ox2" cm:name="autoridades" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="ip-o83eQ-RXu2WqvC" cm:class="ps:parents">
+        <cm:relation cm:id="iPnScZL6ingQ_jAio" cm:type="ps:parent">
+          <cm:target cm:id="ie9n0JQTXDBh-h8qX">./iOhvbkrDU7DmkIlKH</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iWysWqqqu2zPwg0KQ" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="itxwJaCRTWHXwArVs" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="imhQl8Esjfgmd7nuj" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iZYsgioGtPHIiXupl" cm:type="ps:datetime">2017-06-14T18:40:52.580Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iOD8-5V8w3xyef88Y" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i2UhIZH16i5tBrfZc" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iCCcGZ2zSHewlSa5s" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="i8sw_roMttx80bKmY" cm:type="ps:datetime">2017-06-14T18:40:52.580Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="isP-qI34H-vo7GZnr" cm:mimetype="text/plain" cm:encoding="utf-8">Autoridades</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="imA1YOW_BQiMc6ejI" cm:name="notificador" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+      <cm:relations cm:id="iSrZAbab_IgXur0z3" cm:class="ps:parents">
+        <cm:relation cm:id="iNK2Ite33L3IS2Hvj" cm:type="ps:parent">
+          <cm:target cm:id="ivcanDgJ6PoqmZfDO">./iugNQ3NYNjBIYb3le</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iw-Ya-f-0ybUPvLm2" cm:class="ps:children">
+        <cm:relation cm:id="iWW3IO1eTsEBErybC" cm:type="ps:or" cm:range="[1,n]">
+          <cm:target cm:id="iNoG3IL5FSnyRYVVY">./iX5gzPHZtA0nehu6k</cm:target>
+          <cm:target cm:id="icAPB5Xlk1stbiXwt">./iUIgECf1n9_Wg5uZf</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iMX-DAQqAejC4Jl2N" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="ibK558BaN6RHI37K-" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="igewzY7ZKfwzOZGX3" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ibjvERQrl4ZDfho-K" cm:type="ps:datetime">2017-06-14T18:41:15.687Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ir46xpDAGvLp_P5qe" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="imQ-73lcggexe6F15" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iMRqyhEfPe6vvkRcC" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iCdtOcsL71WDRJqcr" cm:type="ps:datetime">2017-06-14T18:42:06.830Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iKs8Y0Ha3t9VU959M" cm:mimetype="text/plain" cm:encoding="utf-8">Notificador</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iX5gzPHZtA0nehu6k" cm:name="sms" cm:type="ps:feature" cm:class="ps:feature">
+      <cm:relations cm:id="i5QOavNP_GRICUWXG" cm:class="ps:parents">
+        <cm:relation cm:id="iXRtAlasiUBigvoW5" cm:type="ps:parent">
+          <cm:target cm:id="i9nMcW3t8yxuJB3qT">./imA1YOW_BQiMc6ejI</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iOS-EYvXN1ESQlFrR" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="i1FJr5k59xIu5-cze" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iSOUUNV6S9MlhEhwo" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iJS57qq2bszStZON4" cm:type="ps:datetime">2017-06-14T18:42:00.119Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iaUZlJTrjtW5sk-OX" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iFNJURSVH8kp6K5YY" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i2ZukDrHJhdZj6PfS" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iHy8QRCJ8E3pK8U52" cm:type="ps:datetime">2017-06-14T18:42:00.119Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="i6qtDyChWZULGhBG2" cm:mimetype="text/plain" cm:encoding="utf-8">SMS</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iUIgECf1n9_Wg5uZf" cm:name="email" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+      <cm:relations cm:id="ioJE1VjtxqZyQqcAn" cm:class="ps:parents">
+        <cm:relation cm:id="ipS4d3WeLyQAPiQow" cm:type="ps:parent">
+          <cm:target cm:id="ipjs5uO42RJgQUu7g">./imA1YOW_BQiMc6ejI</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iFp0sz7I6EV_Jdbqz" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="i7ER9sQwZvvdNS2jn" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i6s8FCIsCUK0FetKw" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ia5xvAPh1vPCAOFB8" cm:type="ps:datetime">2017-06-14T18:42:06.831Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iIXPka3JmM4pr6gMC" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="i_iRQrIRkSLIB3IHA" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i2oklM0LajP5TIxTd" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iaxyio9G9xMKUPSgg" cm:type="ps:datetime">2017-06-14T18:42:06.831Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="inlEs0rTzfgjkSwTc" cm:mimetype="text/plain" cm:encoding="utf-8">Email</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+  </cm:elements>
+</cm:consulmodel>

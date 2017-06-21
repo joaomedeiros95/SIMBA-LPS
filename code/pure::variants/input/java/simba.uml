@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>br.ufrn.simba</OriginalElement>
+  <nodes>
+    <node x="1036.9670138888887" y="696.0">br.ufrn.simba.seguranca.Alerta</node>
+    <node x="415.0" y="135.0">br.ufrn.simba.Controlador.ControladorThread</node>
+    <node x="647.9999999999999" y="1031.0">br.ufrn.simba.dispositivo.seguranca.Bollands</node>
+    <node x="325.9333333333334" y="483.0">br.ufrn.simba.Instancia</node>
+    <node x="0.0" y="1283.0">br.ufrn.simba.comunicacao.HTTPRequester</node>
+    <node x="224.9333333333334" y="322.0">br.ufrn.simba.Controlador</node>
+    <node x="719.0" y="1283.0">br.ufrn.simba.monitoramento.Bateria</node>
+    <node x="1177.0" y="1018.0">br.ufrn.simba.seguranca.NotificacaoEmail</node>
+    <node x="1065.1475694444441" y="857.0">br.ufrn.simba.seguranca.Notificacao</node>
+    <node x="1744.75" y="483.0">br.ufrn.simba.dispositivo.sensor.Movimento</node>
+    <node x="72.0" y="1522.0">br.ufrn.simba.comunicacao.HTTPRequester.RespostaHTTP</node>
+    <node x="684.5" y="0.0">br.ufrn.simba.model.AtividadeSensor</node>
+    <node x="1467.75" y="483.0">br.ufrn.simba.dispositivo.sensor.Calor</node>
+    <node x="0.0" y="135.0">br.ufrn.simba.dispositivo.CameraMovimento</node>
+    <node x="541.7633333333333" y="592.0">br.ufrn.simba.Instancia.MonitoramentoImpl</node>
+    <node x="403.0" y="1283.0">br.ufrn.simba.utils.Propriedades</node>
+    <node x="1352.415" y="161.0">br.ufrn.simba.dispositivo.Dispositivo</node>
+    <node x="913.75" y="483.0">br.ufrn.simba.dispositivo.sensor.Som</node>
+    <node x="625.0" y="148.0">br.ufrn.simba.monitoramento.Monitoramento</node>
+    <node x="1322.415" y="296.0">br.ufrn.simba.dispositivo.sensor.Sensor</node>
+    <node x="216.0" y="1031.0">br.ufrn.simba.dispositivo.seguranca.Luzes</node>
+    <node x="246.9670138888887" y="805.0">br.ufrn.simba.dispositivo.seguranca.DispositivoSeguranca</node>
+    <node x="0.0" y="1031.0">br.ufrn.simba.dispositivo.seguranca.Sirene</node>
+    <node x="1024.0" y="1283.0">br.ufrn.simba.model.TipoDispositivo</node>
+    <node x="863.9999999999999" y="1031.0">br.ufrn.simba.seguranca.NotificacaoSMS</node>
+    <node x="1190.75" y="483.0">br.ufrn.simba.dispositivo.sensor.Impacto</node>
+    <node x="1133.6649305555552" y="1153.0">br.ufrn.simba.seguranca.MedidasSeguranca</node>
+    <node x="431.9999999999999" y="1031.0">br.ufrn.simba.dispositivo.seguranca.Fumaca</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="br.ufrn.simba.comunicacao.HTTPRequester.RespostaHTTP" target="br.ufrn.simba.comunicacao.HTTPRequester">
+      <point x="-53.5" y="-42.5" />
+      <point x="125.5" y="1497.0" />
+      <point x="89.5" y="1497.0" />
+      <point x="-89.5" y="94.5" />
+    </edge>
+    <edge source="br.ufrn.simba.dispositivo.seguranca.Sirene" target="br.ufrn.simba.dispositivo.seguranca.DispositivoSeguranca">
+      <point x="0.0" y="-29.5" />
+      <point x="98.0" y="993.0" />
+      <point x="293.5920138888887" y="993.0" />
+      <point x="-139.875" y="81.5" />
+    </edge>
+    <edge source="br.ufrn.simba.Controlador.ControladorThread" target="br.ufrn.simba.Controlador">
+      <point x="47.5" y="55.5" />
+      <point x="557.5" y="271.0" />
+      <point x="497.23333333333335" y="271.0" />
+      <point x="77.79999999999995" y="-42.5" />
+    </edge>
+    <edge source="br.ufrn.simba.dispositivo.sensor.Som" target="br.ufrn.simba.dispositivo.sensor.Sensor">
+      <point x="0.0" y="-29.5" />
+      <point x="1042.25" y="453.0" />
+      <point x="1358.165" y="453.0" />
+      <point x="-107.25" y="68.5" />
+    </edge>
+    <edge source="br.ufrn.simba.dispositivo.seguranca.DispositivoSeguranca" target="br.ufrn.simba.seguranca.Alerta">
+      <point x="0.0" y="-81.5" />
+      <point x="433.4670138888887" y="780.0" />
+      <point x="1085.8003472222222" y="780.0" />
+      <point x="-97.66666666666663" y="29.5" />
+    </edge>
+    <edge source="br.ufrn.simba.dispositivo.sensor.Movimento" target="br.ufrn.simba.dispositivo.sensor.Sensor">
+      <point x="0.0" y="-29.5" />
+      <point x="1873.25" y="453.0" />
+      <point x="1572.665" y="453.0" />
+      <point x="107.25" y="68.5" />
+    </edge>
+    <edge source="br.ufrn.simba.dispositivo.seguranca.Luzes" target="br.ufrn.simba.dispositivo.seguranca.DispositivoSeguranca">
+      <point x="0.0" y="-29.5" />
+      <point x="314.0" y="993.0" />
+      <point x="386.8420138888887" y="993.0" />
+      <point x="-46.625" y="81.5" />
+    </edge>
+    <edge source="br.ufrn.simba.dispositivo.sensor.Calor" target="br.ufrn.simba.dispositivo.sensor.Sensor">
+      <point x="0.0" y="-29.5" />
+      <point x="1596.25" y="463.0" />
+      <point x="1501.165" y="463.0" />
+      <point x="35.75" y="68.5" />
+    </edge>
+    <edge source="br.ufrn.simba.seguranca.NotificacaoSMS" target="br.ufrn.simba.seguranca.Notificacao">
+      <point x="-5.6843418860808015E-14" y="-29.5" />
+      <point x="1010.4999999999998" y="993.0" />
+      <point x="1120.3975694444441" y="993.0" />
+      <point x="-55.25" y="29.5" />
+    </edge>
+    <edge source="br.ufrn.simba.seguranca.Notificacao" target="br.ufrn.simba.seguranca.Alerta">
+      <point x="0.0" y="-29.5" />
+      <point x="1175.6475694444441" y="780.0" />
+      <point x="1183.4670138888887" y="780.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="br.ufrn.simba.dispositivo.sensor.Sensor" target="br.ufrn.simba.dispositivo.Dispositivo">
+      <point x="0.0" y="-68.5" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="br.ufrn.simba.dispositivo.seguranca.Bollands" target="br.ufrn.simba.dispositivo.seguranca.DispositivoSeguranca">
+      <point x="0.0" y="-29.5" />
+      <point x="745.9999999999999" y="993.0" />
+      <point x="573.3420138888887" y="993.0" />
+      <point x="139.875" y="81.5" />
+    </edge>
+    <edge source="br.ufrn.simba.dispositivo.seguranca.Fumaca" target="br.ufrn.simba.dispositivo.seguranca.DispositivoSeguranca">
+      <point x="0.0" y="-29.5" />
+      <point x="529.9999999999999" y="993.0" />
+      <point x="480.0920138888887" y="993.0" />
+      <point x="46.625" y="81.5" />
+    </edge>
+    <edge source="br.ufrn.simba.Instancia.MonitoramentoImpl" target="br.ufrn.simba.monitoramento.Monitoramento">
+      <point x="38.5" y="-29.5" />
+      <point x="734.2633333333333" y="562.0" />
+      <point x="903.25" y="562.0" />
+      <point x="92.75" y="42.5" />
+    </edge>
+    <edge source="br.ufrn.simba.dispositivo.sensor.Impacto" target="br.ufrn.simba.dispositivo.sensor.Sensor">
+      <point x="0.0" y="-29.5" />
+      <point x="1319.25" y="463.0" />
+      <point x="1429.665" y="463.0" />
+      <point x="-35.75" y="68.5" />
+    </edge>
+    <edge source="br.ufrn.simba.seguranca.NotificacaoEmail" target="br.ufrn.simba.seguranca.Notificacao">
+      <point x="0.0" y="-42.5" />
+      <point x="1333.5" y="993.0" />
+      <point x="1230.8975694444441" y="993.0" />
+      <point x="55.25" y="29.5" />
+    </edge>
+    <edge source="br.ufrn.simba.Instancia.MonitoramentoImpl" target="br.ufrn.simba.Instancia">
+      <point x="-115.5" y="-29.5" />
+      <point x="580.2633333333333" y="572.0" />
+      <point x="372.6833333333334" y="572.0" />
+      <point x="-46.75" y="29.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5646978021978022" x="572.9958647531014" y="1348.1605448795913" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
